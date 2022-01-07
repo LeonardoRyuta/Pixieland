@@ -1,0 +1,21 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kesar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "@openzeppelin/contracts": "^4.4.1",
+    "pify": "^5.0.0"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.4.2",
+    "truffle": "^5.4.27",
+    "truffle-plugin-verify": "^0.5.12"
+  }
+}
