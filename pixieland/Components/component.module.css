@@ -30,7 +30,9 @@
   }
 
   .nav {
-    position: sticky;
+    width: 100%;
+    transform: translateZ(42px);
+    position: fixed;
     top: 0;
     background-color: white;
     padding-top: 10px;
