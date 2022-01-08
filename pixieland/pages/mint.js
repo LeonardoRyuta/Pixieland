@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/mint.module.css'
 import button from '../styles/button.module.css'
 import { useWeb3React } from "@web3-react/core"
+import { formatEther, parseEther } from '@ethersproject/units'
 import useContract from '../web3/useContract'
 import abi from "../web3/houses.json";
 export default function Mint() {
@@ -11,8 +12,8 @@ export default function Mint() {
     const contract = useContract("0xc6D4a3795B2877f9a57907A05e6ee8E41aFd3dB1", abi)
 
     const mint = async () => {
-      console.log(account)
-      console.log(contract)
+      const house = await contract.mintHouse({value: parseEther("0.05"), gasPrice: 100000000000, gasLimit: 100000})
+      console.log(house)
     }
 
     return (
@@ -34,7 +35,7 @@ export default function Mint() {
                     <div className={styles.card}>
                         <button
                           className={button.pixel2}
-                          onClick={mint}  
+                          onClick={mint}
                         >
                             MINT 1 House
                         </button>
