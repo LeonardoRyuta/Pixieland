@@ -2,11 +2,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/mint.module.css'
 import button from '../styles/button.module.css'
-
+import { useWeb3React } from "@web3-react/core"
+import useContract from '../web3/useContract'
+import abi from "../web3/houses.json";
 export default function Mint() {
 
-    const mint = () => {
-      console.log('minting...');
+    const { account } = useWeb3React();
+    const contract = useContract("0xc6D4a3795B2877f9a57907A05e6ee8E41aFd3dB1", abi)
+
+    const mint = async () => {
+      console.log(account)
     }
 
     return (
