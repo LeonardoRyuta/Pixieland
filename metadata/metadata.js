@@ -1,6 +1,5 @@
 const fs = require('fs');
 
-
 const i = 0;
 // read file and make object
 
