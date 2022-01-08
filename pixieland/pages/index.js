@@ -11,19 +11,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
+      <div>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-        <a href="/">Pixieland</a>
+        <h1 className={styles.title} >
+        <a href="/" >Pixieland</a>
         </h1>
         <h2 className={styles.head }>
-          <a href="/game">PLAY</a>
+          <div className={styles.playbutton}><a href="/game">PLAY</a></div>
         </h2>
       </main>
+      </div>
+
 
       <div className={styles.other}>
         <div style={{paddingRight:"300px"}}>
           <div className={styles.griditem} style={{justifyContent:"center", alignItems:"center"}}>
-            Image Here
+            <img src='firesnowhouse.gif' style={{transform:"scale(30%) translateY(-1000px) translateX(-1150px)", borderRadius: "20px", boxShadow:"-4px -3px 45px 21px rgba(0,0,0,0.35)"}}/>
           </div>
         </div>
         <div>  
@@ -31,7 +35,7 @@ export default function Home() {
             <h1 style={{borderBottom:"2px solid black"}}>
               Title
             </h1>
-            <p>
+            <p style={{fontFamily:"Pixelboy"}}> 
               text
             </p>
           </div>  
@@ -46,15 +50,19 @@ export default function Home() {
               Title
             </h1>
             <p>
-              text
+            <div style={{fontFamily:"Pixelboy"}}>
+        text
+        </div>
             </p>
           </div>
         </div>
         <div>  
           <div className={styles.griditem} style={{}}>
-            Image here
+          <img src='abandonedhouse.png' style={{transform:"scale(30%) translateY(-1000px) translateX(-1150px)", borderRadius: "20px", boxShadow:"-4px -3px 45px 21px rgba(0,0,0,0.35)"}}/>
           </div>  
         </div>
+
+
         </div>
 
     </div>
