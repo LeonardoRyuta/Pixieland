@@ -12,7 +12,7 @@ export default function Game() {
         </Head>
         <div>
       <main className={styles.main2}>
-
+        
       </main>
       </div>  
       </div>

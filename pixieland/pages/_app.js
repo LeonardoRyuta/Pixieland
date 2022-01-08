@@ -5,12 +5,14 @@ import { Web3ReactProvider } from "@web3-react/core";
 import getLibrary from "../web3/getLibrary";
 
 function MyApp({ Component, pageProps }) {
-  return ( 
-    <Layout>
+  return (
+    <div>
       <Web3ReactProvider getLibrary={getLibrary}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </Web3ReactProvider>
-    </Layout>
+    </div>
   )
 }
 
