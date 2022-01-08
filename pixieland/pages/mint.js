@@ -12,6 +12,7 @@ export default function Mint() {
 
     const mint = async () => {
       console.log(account)
+      console.log(contract)
     }
 
     return (
