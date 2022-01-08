@@ -1,20 +1,29 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import styles from './component.module.css'
 import Link from 'next/link'
+import { useWeb3React } from "@web3-react/core";
+import Account from "../web3/account";
 
 export default function Menu () {
+    const { account } = useWeb3React();
+    console.log(account);
+
     return(
             <div>
-                <Navbar className={styles.nav} bg='none' variant="light" expand="lg">
+                <Navbar bg='none' variant="light" expand="lg">
                 <Container>
+                    <Navbar.Brand href="/">
+                        PixieLand
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className={styles.right}>
-                        <span className={styles.link}><Link href='/'>Home</Link></span>
-                        <span className={styles.link}><Link href='/mint'>Mint</Link></span>
-                        <span className={styles.link}><Link href='/map'>Map</Link></span>
-                        <span className={styles.link}><Link href='/game'>Game</Link></span>
-                        <span className={styles.link}><Link href='/whitepaper'>Whitepaper</Link></span>
-      
+                    <Link href='/'><a className={styles.link}>Home</a></Link>
+                        <Link href='/mint'><a className={styles.link}>Mint</a></Link>
+                        <Link href='/map'><a className={styles.link}>Map</a></Link>
+                        <Link href='/game'><a className={styles.link}>Game</a></Link>
+                        <Link href='/whitepaper'><a className={styles.link}>Whitepaper</a></Link>
+                        <a className={styles.link}><Account/></a>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

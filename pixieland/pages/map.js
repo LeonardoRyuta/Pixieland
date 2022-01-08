@@ -11,9 +11,6 @@ export default function Map() {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <div>
-      <main className={styles.main2}>
-
-      </main>
       </div>  
       </div>
     )
