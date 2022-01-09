@@ -1,8 +1,8 @@
   .footer {
     padding: 5rem 0px 5rem 0px;
-    background-image: url('/2.png');
+    /* background-image: url('/2.png');
     background-size: auto 100%;
-    image-rendering: pixelated;
+    image-rendering: pixelated; */
     font-family: 'ChronoType';
   }
 
@@ -23,11 +23,12 @@
   }
 
   .link {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     font-family: 'ChronoType';
-    color: #00000083;
+    color: #bdbaba;
     font-size: 1.5rem;
-    transition: 0.3s ease-in-out;
+    transition: 0.15s ease-in-out;
+    border-bottom: 2px solid rgba(128, 128, 128, 0);
   }
 
   .larger {
@@ -35,7 +36,8 @@
   }
 
   .link:hover{
-    color: #000000;
+    color: #6b6b6b;
+    border-bottom: 2px solid rgb(123, 124, 123);
   }
 
   .right {

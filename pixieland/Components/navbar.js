@@ -12,7 +12,7 @@ export default function Menu () {
 
     return(
             <div>
-                <Navbar bg='none' variant="light" expand="lg">
+                <Navbar bg='black'  variant="light" expand="lg" >
                 <Container>
                     <Navbar.Brand href="/">
                         PixieLand

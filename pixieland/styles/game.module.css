@@ -1,0 +1,37 @@
+.main{
+    height: 63vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comingsoon{
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 55%;
+    border: 50px double red;
+    transform: rotateZ(-15deg);
+    color: red;
+    font-family: "ChronoType";
+    animation: fade-in 2s ease;
+}
+.comingsoon2{
+    display: flex;
+    min-height: 50vh;
+    font-size: 6rem;
+    font-family: "ChronoType";
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 2s ease;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

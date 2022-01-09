@@ -29,10 +29,10 @@ export default function Mint() {
             </h1>
             <main className={styles.main}>
                 <div className={`${styles.grid}`} data-aos='fade-up'>
-                    <div className={styles.card}>
+                    <div >
                       <Image src='/firesnowhouse.gif' width={400} height={400}></Image>
                     </div>
-                    <div className={styles.card}>
+                    <div >
                         <button
                           className={button.pixel2}
                           onClick={mint}

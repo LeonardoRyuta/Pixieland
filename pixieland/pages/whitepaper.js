@@ -11,11 +11,11 @@ export default function Whitepaper() {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <div>
-      <main className={styles.main3}>
-        <h1 className={styles.title}>Whitepaper</h1>
-
-      </main>
-      </div>  
+          <main className={styles.main3}>
+            <h1 className={styles.title} style={{paddingTop:"20px"}}>Whitepaper</h1>
+            <p style={{textAlign:"left"}}>Whitepaper text</p>
+          </main>
+        </div>  
       </div>
     
     )

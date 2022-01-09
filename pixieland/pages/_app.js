@@ -6,13 +6,13 @@ import getLibrary from "../web3/getLibrary";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
-      <Web3ReactProvider getLibrary={getLibrary}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </Web3ReactProvider>
-    </div>
+      <div>
+        <Web3ReactProvider getLibrary={getLibrary}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </Web3ReactProvider>
+      </div>
   )
 }
 

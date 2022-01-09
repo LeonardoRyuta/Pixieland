@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/game.module.css'
 
 export default function Game() {
 
@@ -11,8 +11,10 @@ export default function Game() {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <div>
-      <main className={styles.main2}>
-        
+      <main className={`${styles.main}`}>
+        <div className={`${styles.comingsoon}`}>
+          COMING SOON
+        </div>
       </main>
       </div>  
       </div>
