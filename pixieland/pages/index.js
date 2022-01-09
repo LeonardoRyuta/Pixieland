@@ -75,7 +75,7 @@ export default function Home() {
         </div>
         <div>  
           <div  style={{}} className={styles.gridimage}>
-          <Image src='/abandonedhouse.png' width={400} height={400} style={{borderRadius: "20px", boxShadow:"-4px -3px 45px 21px rgba(0,0,0,0.35)"}}/>
+          <Image src='/abandonedhouse.png' width={400} height={400} className="rounded" style={{borderRadius: "20px", boxShadow:"-4px -3px 45px 21px rgba(0,0,0,0.35)"}}/>
           </div>  
         </div>
         </div>

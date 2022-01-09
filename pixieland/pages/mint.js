@@ -29,8 +29,8 @@ export default function Mint() {
             </h1>
             <main className={styles.main}>
                 <div className={`${styles.grid}`} data-aos='fade-up'>
-                    <div >
-                      <Image src='/firesnowhouse.gif' width={400} height={400}></Image>
+                    <div className={styles.img}>
+                      <Image src='/firesnowhouse.gif' className="rounded" width={400} height={400}></Image>
                     </div>
                     <div >
                         <button

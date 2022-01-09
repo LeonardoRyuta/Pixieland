@@ -8,7 +8,7 @@
 }
 
 .main {
-  min-height: 63vh;
+  min-height: 62.3vh;
   padding: 11rem 0;
   flex: 1;
   display: flex;
@@ -51,13 +51,15 @@
   -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
   transition-property: transform;
+  filter: drop-shadow(8px 8px 8px black);
 }
 
 
 .gridimage:hover,
 .gridimage:focus,
 .gridimage:active {
-  transform: scale(1.1)
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px black);
   
 }
 
@@ -82,7 +84,8 @@
   display:inline-block;
   position: relative;
   white-space: pre;
-  animation: scrollimgs 10s linear infinite; 
+  transform: translateY(5.3px);
+  animation: scrollimgs 40s linear infinite; 
 }
 
 @keyframes scrollimgs {
