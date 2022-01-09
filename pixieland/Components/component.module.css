@@ -1,5 +1,5 @@
   .footer {
-    padding: 5rem 0px 5rem 0px;
+    padding: 2rem 0px 2rem 0px;
     /* background-image: url('/2.png');
     background-size: auto 100%;
     image-rendering: pixelated; */
@@ -21,6 +21,7 @@
   .logo {
     margin-left: 0.5rem;
   }
+  
 
   .link {
     padding: 0.5rem 1rem;

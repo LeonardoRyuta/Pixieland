@@ -21,6 +21,9 @@ export default function Home() {
         <h2 className={styles.head } >
           <div className={styles.playbutton}><a href="/game">PLAY</a></div>
         </h2>
+        <svg onClick={()=>{scroll(0, 1060)}} xmlns="http://www.w3.org/2000/svg" className={`${styles.arrowdown}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
       </main>
       </div>
 
@@ -40,7 +43,7 @@ export default function Home() {
 
     <div style={{backgroundColor:"bisque"}}>
 
-      <div className={styles.other}>
+      <div className={styles.other} id="div1">
         <div>
         <div className={styles.gridimage}>
           <Image src='/firesnowhouse.gif' width={400} height={400} className="rounded" style={{borderRadius: "20px", boxShadow:"-4px -3px 45px 21px rgba(0,0,0,0.35)"}}/>
