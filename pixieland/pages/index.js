@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
+import Script from 'next/script'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head> 
@@ -12,36 +15,37 @@ export default function Home() {
       </Head>
 
 
-      <div>
+      <div onScroll={()=>{console.log("scrolled")}}>
      
-      <main className={styles.main}>
+      <main className={styles.main} id="main">
         <h1 className={styles.title}>
         <a href="/" style={{fontFamily:"ChronoType"}}>Pixieland</a>
         </h1>
-        <h2 className={styles.head } >
+        {/* <h2 className={styles.head } >
           <div className={styles.playbutton}><a href="/game">PLAY</a></div>
-        </h2>
-        <svg onClick={()=>{scroll(0, 1060)}} xmlns="http://www.w3.org/2000/svg" className={`${styles.arrowdown}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        </h2> */}
+        <svg onClick={()=>{scroll(0, (document.getElementById("info").offsetTop + 10))}} xmlns="http://www.w3.org/2000/svg" className={`${styles.arrowdown}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </main>
       </div>
 
       <div className={styles.scrollingimgs}>
-        <Image src='/420.gif' width={400} height={400}/>
-        <Image src='/421.gif' width={400} height={400}/>
-        <Image src='/1424.gif' width={400} height={400}/>
-        <Image src='/1581.gif' width={400} height={400}/>
-        <Image src='/1824.gif' width={400} height={400}/>
-        <Image src='/3824.gif' width={400} height={400}/>
-        <Image src='/420.gif' width={400} height={400}/>
-        <Image src='/421.gif' width={400} height={400}/>
-        <Image src='/1424.gif' width={400} height={400}/>
-        <Image src='/1581.gif' width={400} height={400}/>
-        <Image src='/1824.gif' width={400} height={400}/>
+        <img src='/420.gif' className={styles.scrollimg}/>
+        <img src='/421.gif' className={styles.scrollimg}/>
+        <img src='/1424.gif' className={styles.scrollimg}/>
+        <img src='/1581.gif' className={styles.scrollimg}/>
+        <img src='/1824.gif' className={styles.scrollimg}/>
+        <img src='/3824.gif' className={styles.scrollimg}/>
+        <img src='/420.gif' className={styles.scrollimg}/>
+        <img src='/421.gif' className={styles.scrollimg}/>
+        <img src='/1424.gif' className={styles.scrollimg}/>
+        <img src='/1581.gif' className={styles.scrollimg}/>
+        <img src='/1824.gif' className={styles.scrollimg}/>
+        <img src='/3824.gif' className={styles.scrollimg}/>
       </div>
 
-    <div style={{backgroundColor:"bisque"}}>
+    <div style={{backgroundColor:"bisque"}} id="info">
 
       <div className={styles.other} id="div1">
         <div>
@@ -52,10 +56,10 @@ export default function Home() {
         <div>  
           <div className={styles.griditem}  style={{textAlign:"left"}}>
             <h1 style={{borderBottom:"2px solid black"}}>
-              Sample Title
+              Phase 1
             </h1>
             <p style={{fontFamily:"ChronoType"}}> 
-            TThe Missouri Centennial half dollar is a commemorative fifty-cent piece struck by the United States Mint in 1921. It was designed by Robert Ingersoll Aitken. The US state of Missouri wanted a commemorative coin to mark its centennial that year. Legislation for such a coin passed through Congress without opposition and was signed on March 4, 1921 by President Warren G. Harding on his inauguration day. The federal Commission of Fine Arts hired Aitken to design the coin, which depicted Daniel Boone on both sides. The reverse design, showing Boone with a Native American, was likely intended to symbolize the displacement of the Indians by white settlers.he Missouri Centennial half dollar is a commemorative fifty-cent piece struck by the United States Mint in 1921. It was designed by Robert Ing
+            10000 Pixiehouses sale. After phase 1 Pixieland houses will allow owners to display their NFTs and create their own space using our developer kit.
             </p>
           </div>  
         </div>
@@ -67,12 +71,12 @@ export default function Home() {
         <div style={{}}>
           <div className={styles.griditem} style={{textAlign:"right"}}>
             <h1 style={{borderBottom:"2px solid black"}}>
-              Sameple Title
+              Phase 2
             </h1>
             <p>
             <div style={{fontFamily:"ChronoType"}}>
-        Sample Text
-        </div>
+            Pixieland's first land sale will take place in Genisis city - the core of our metaverse. Users who own land will be able to place their pixie house and access the land editior where they can fully customize their land and use the developer kit.
+            </div>
             </p>
           </div>
         </div>

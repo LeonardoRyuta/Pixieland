@@ -1,4 +1,5 @@
-  .footer {
+ 
+ .footer {
     padding: 2rem 0px 2rem 0px;
     /* background-image: url('/2.png');
     background-size: auto 100%;
@@ -43,10 +44,30 @@
 
   .right {
     margin-left: auto;
+
   }
 
   .padded {
     padding: 1rem;
     text-align: left;
     color: #0965ce;
+  }
+
+  .Navbar{
+    background-color: rgb(61, 61, 61);
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .contain {
+    margin-right: 0%;
+  }
+
+  
+
+  .accname{
+  }
+
+  .Brand{
+    margin-left: 0%;
+    justify-content: left;
   }

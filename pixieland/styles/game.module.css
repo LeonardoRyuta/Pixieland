@@ -4,19 +4,86 @@
     justify-content: center;
     align-items: center;
 }
-.comingsoon{
-    font-size: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    width: 55%;
-    border: 50px double red;
-    transform: rotateZ(-15deg);
-    color: red;
-    font-family: "ChronoType";
-    animation: fade-in 2s ease;
+
+@media (max-width: 400px){
+    .comingsoon{
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 90%;
+        border: 20px double red;
+        transform: rotateZ(-15deg);
+        color: red;
+        font-family: "ChronoType";
+        animation: fade-in 2s ease;
+    }
 }
+
+@media (max-width: 600px) and (min-width: 400px){
+    .comingsoon{
+        font-size: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35%;
+        width: 85%;
+        border: 30px double red;
+        transform: rotateZ(-15deg);
+        color: red;
+        font-family: "ChronoType";
+        animation: fade-in 2s ease;
+    }
+}
+
+@media (max-width: 864px) and (min-width: 600px){
+    .comingsoon{
+        font-size: 4.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 70%;
+        border: 40px double red;
+        transform: rotateZ(-15deg);
+        color: red;
+        font-family: "ChronoType";
+        animation: fade-in 2s ease;
+    }
+}
+
+@media (min-width: 864px) and (max-width: 1088px){
+    .comingsoon{
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 75%;
+        border: 50px double red;
+        transform: rotateZ(-15deg);
+        color: red;
+        font-family: "ChronoType";
+        animation: fade-in 2s ease;
+    }
+}
+@media (min-width: 1088px){
+    .comingsoon{
+        font-size: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 55%;
+        border: 50px double red;
+        transform: rotateZ(-15deg);
+        color: red;
+        font-family: "ChronoType";
+        animation: fade-in 2s ease;
+    }
+}
+
 .comingsoon2{
     display: flex;
     min-height: 50vh;
