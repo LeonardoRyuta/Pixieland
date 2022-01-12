@@ -30,7 +30,6 @@
     color: #bdbaba;
     font-size: 1.5rem;
     transition: 0.15s ease-in-out;
-    border-bottom: 2px solid rgba(128, 128, 128, 0);
   }
 
   .larger {
@@ -39,7 +38,6 @@
 
   .link:hover{
     color: #6b6b6b;
-    border-bottom: 2px solid rgb(123, 124, 123);
   }
 
   .right {
