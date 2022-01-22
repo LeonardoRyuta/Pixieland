@@ -52,8 +52,11 @@
   }
 
   .Navbar{
+    margin-left: 90%;
     background-color: rgb(61, 61, 61);
     border: 1px solid rgb(255, 255, 255);
+    justify-content: right;
+    display: flex;
   }
 
   .contain {
