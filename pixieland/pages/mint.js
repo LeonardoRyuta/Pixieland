@@ -25,7 +25,7 @@ export default function Mint() {
             <Head>
                 <title>PixieLand | Mint</title>
                 <meta name="description" content="PixieLand - Mint your own House!" />
-                <link rel="icon" href="/logo512.png" />
+                <link rel="icon" href="/Borboleta.jpg" />
             </Head>
             <div id="mintmain">
               <h1 className={styles.title}>
