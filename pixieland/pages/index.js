@@ -75,7 +75,7 @@ export default function Home() {
             </h1>
             <p>
             <div style={{fontFamily:"ChronoType"}}>
-            Pixieland's first land sale will take place in Genisis city - the core of our metaverse. Users who own land will be able to place their pixie house and access the land editior where they can fully customize their land and use the developer kit.
+            Pixieland&apos;s first land sale will take place in Genisis city - the core of our metaverse. Users who own land will be able to place their pixie house and access the land editior where they can fully customize their land and use the developer kit.
             </div>
             </p>
           </div>
