@@ -40,6 +40,7 @@ export default function Account ({ triedToEagerConnect }) {
               <button 
               className={styles.button}
                 disabled={connecting}
+                style={{color: 'white'}}
                 onClick={() => {
                   setConnecting(true);
     
@@ -57,7 +58,7 @@ export default function Account ({ triedToEagerConnect }) {
                 {isMetaMaskInstalled ? "Connect to MetaMask" : "Connect to Wallet"}
               </button>
             ) : (
-              <button className={styles.button} onClick={startOnboarding}>Install Metamask</button>
+              <button className={styles.button} onClick={startOnboarding} style={{color: 'white'}}>Install Metamask</button>
             )}
           </div>
         );

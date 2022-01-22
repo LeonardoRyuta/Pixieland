@@ -19,7 +19,7 @@ export default function Home() {
      
       <main className={styles.main} id="main">
         <h1 className={styles.title}>
-        <a href="/" style={{fontFamily:"ChronoType"}}>Pixieland</a>
+          <p href="/" style={{fontFamily:"ChronoType"}}>Pixieland</p>
         </h1>
         {/* <h2 className={styles.head } >
           <div className={styles.playbutton}><a href="/game">PLAY</a></div>

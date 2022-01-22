@@ -11,9 +11,9 @@ export default function Footer () {
                             <Image className={styles.footerimage} src={'/twitter.png'} width={40} height={40}/>
                         </a>
                     </div>
-                    <div className={styles.padded}>
+                    {/* <div className={styles.padded}>
                         <a className={`${styles.link} ${styles.larger}`} href='https://twitter.com/PixieLandNFT'>OpenSea</a>
-                    </div>
+                    </div> */}
                 </div>
             </footer>
         </div>
