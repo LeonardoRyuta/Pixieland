@@ -35,9 +35,10 @@
   image-rendering: pixelated;
   background-position: 50%;
   background-size:cover;
+  height: 100vh;
   padding: 11rem 0;
   flex: 1;
-  display: flex;
+  display: flex;  
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -151,7 +152,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 6rem;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .minttitle {
@@ -214,7 +215,7 @@
 
 .arrowdown{
   cursor:pointer;
-  transform: translateY(120px);
+  transform: translateY(50px);
   max-height: 80px;
   max-width: 50px;
   animation: arrowbounce 1.25s linear infinite;
@@ -222,19 +223,19 @@
 
 @keyframes arrowbounce {
   0%{
-    transform: translateY(110px);
+    transform: translateY(50px);
   }
   30%{
-    transform: translateY(120px);
+    transform: translateY(60px);
   }
   50%{
-    transform: translateY(110px);    
+    transform: translateY(50px);    
   }
   80%{
-    transform: translateY(120px);
+    transform: translateY(60px);
   }
   100%{
-    transform: translateY(110px);
+    transform: translateY(50px);
   }
 }
 
