@@ -264,6 +264,8 @@
 }
 
 .rarityPart{
+  justify-content: center;
+  align-items: center;
   padding: 3rem;
   background-color:cornflowerblue;
 }
@@ -279,7 +281,7 @@
 .rarityContent {
   display: flex;
   padding-top: 10px;
-  justify-content:space-around;
+  justify-content:space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -355,7 +357,25 @@
   /* line-height: 2.5rem; */
 }
 
-@media (max-width: 482px){
+@media (max-width: 330px) {
+  .rareImgs{
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 330px) {
+  .rareImgs{
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 378px) {
+  .rareImgs{
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 430px){
   .rareImgs{
     width: 300px;
     height: 300px;
@@ -364,12 +384,19 @@
 
 @media (min-width: 482px){
   .rareImgs{
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (min-width: 538px){
+  .rareImgs{
     width: 400px;
     height: 400px;
   }
 }
 
 .rareImgs{
+  
   border-radius: 5px;
   background-size: 100%;
   padding:1rem;
