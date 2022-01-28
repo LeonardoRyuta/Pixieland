@@ -46,6 +46,11 @@
 
 }
 
+
+.token{
+  
+}
+
 .other {
   display: flex;
   align-items: center;
@@ -396,7 +401,10 @@
 }
 
 .rareImgs{
-  
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0, 0, 0);
   border-radius: 5px;
   background-size: 100%;
   padding:1rem;
@@ -406,41 +414,44 @@
   transition-duration: 0.3s;
   transition-property: transform;
   filter: drop-shadow(8px 8px 8px black);
-  animation: OneOfOnes 10s linear infinite; 
+  background-image: url("../public/1of1s/radioactive-1.png");
+  animation: OneOfOnes 5s infinite; 
 }
 
-.rareImgs:hover,
-.rareImgs:focus,
-.rareImgs:active {
+@media (min-width: 1000px) {
+  .rareImgs:hover,
+  .rareImgs:focus,
+  .rareImgs:active {
   transform: scale(1.1);
   filter: drop-shadow(10px 10px 10px black);
   
 }
+}
 
 @keyframes OneOfOnes {
   0%{
-    background-image: url("../public/radioactive.gif")
+    background-image: url("../public/1of1s/radioactive-1.png")
   }
   14.3%{
-    background-image: url("../public/ruby.gif")
+    background-image: url("../public/1of1s/ruby-1.png")
   }
   28.6%{
-    background-image: url("../public/emerald.gif")
+    background-image: url("../public/1of1s/emerald-1.png")
   }
   42.9%{
-    background-image: url("../public/sapphire.gif")
+    background-image: url("../public/1of1s/sapphire.png")
   }
   57.1%{
-    background-image: url("../public/gold.gif")
+    background-image: url("../public/1of1s/gold-1.png")
   }
   71.4%{
-    background-image: url("../public/silver.gif")
+    background-image: url("../public/1of1s/silver-1.png")
   }
-  85.7%{
-    background-image: url("../public/copper.gif")
+  85.7%{  
+    background-image: url("../public/1of1s/copper-1.png")
   }
   100%{
-    background-image: url("../public/radioactive.gif")
+    background-image: url("../public/1of1s/radioactive-1.png")
   }
 }
 

@@ -75,7 +75,10 @@ export default function Home() {
             </h1>
             <p>
             <div style={{fontFamily:"ChronoType"}}>
-            Pixieland&apos;s first land sale will take place in Genisis city - the core of our metaverse. Users who own land will be able to place their pixie house and access the land editior where they can fully customize their land and use the developer kit.
+            Pixieland&apos;s first land sale will take place in Genisis city - the core of our metaverse. 
+            Users who own land will be able to place their pixie house and access the land editior where they 
+            can fully customize their land and use the developer kit.
+            A token will also be made to be implemented in the upcoming game.
             </div>
             </p>
           </div>
@@ -86,6 +89,27 @@ export default function Home() {
           </div>  
         </div>
         </div>
+
+        <div className={styles.other} id="div1">
+        <div>
+        <div className={styles.gridimage}>
+          <Image src='/7534.gif' width={400} height={400} className="rounded" style={{borderRadius: "20px", boxShadow:"-4px -3px 45px 21px rgba(0,0,0,0.35)"}}/>
+          </div>  
+        </div>
+        <div>  
+          <div className={styles.griditem}  style={{textAlign:"left"}}>
+            <h1 style={{borderBottom:"2px solid black"}}>
+              Phase 3
+            </h1>
+            <p style={{fontFamily:"ChronoType"}}> 
+            Game Launch!!! 
+            Here players will be able to roam around Genisis city. 
+            Owners of land and houses will be able to place them around 
+            the city and customize them with other NFTs or use our developer kit to create virtually anything!
+            </p>
+          </div>  
+        </div>
+      </div>
 
         <div className={styles.rarityPart}>
           <h1 className={styles.rarityTitle}>Pixiehouse Rarity</h1>
