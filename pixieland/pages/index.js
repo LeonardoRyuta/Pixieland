@@ -78,7 +78,7 @@ export default function Home() {
             Pixieland&apos;s first land sale will take place in Genisis city - the core of our metaverse. 
             Users who own land will be able to place their pixie house and access the land editior where they 
             can fully customize their land and use the developer kit.
-            A token will also be made to be implemented in the upcoming game.
+            A token will also be made which will be used in the upcoming game.
             </div>
             </p>
           </div>
@@ -103,7 +103,7 @@ export default function Home() {
             </h1>
             <p style={{fontFamily:"ChronoType"}}> 
             Game Launch!!! 
-            Here players will be able to roam around Genisis city. 
+            Here players will be able to roam around Genesis city. 
             Owners of land and houses will be able to place them around 
             the city and customize them with other NFTs or use our developer kit to create virtually anything!
             </p>
