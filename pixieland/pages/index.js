@@ -147,11 +147,11 @@ export default function Home() {
               <div className={styles.copper}/>
               
             </div>
-
-            {/* <div>
-              This shows the percentage chance of getting a trait on your house.
-            </div> */}
-
+          </div>
+          
+          <div className={styles.traitexp}>
+              When minting you have a percentage chance of getting one of the traits about on your pixiehouse. 
+              These traits can add value to your pixiehouse, and makes you cooler than others.
           </div>
         </div>
 

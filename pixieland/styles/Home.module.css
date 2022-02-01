@@ -460,3 +460,14 @@
   /* padding: 0 1rem 1rem 1rem; */
   transform: translateX(15px);
 }
+
+.traitexp{
+  padding-top: 50px;
+  font-family: ChronoType;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}

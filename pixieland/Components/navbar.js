@@ -14,7 +14,7 @@ export default function Menu () {
 
 
     return(
-            <div >
+            <div>
                 <Navbar bg='black'  variant="light" expand="lg">
                 <Container className={styles.contain} width="100">
                     <Navbar.Toggle className={styles.Navbar} aria-controls="basic-navbar-nav" />
