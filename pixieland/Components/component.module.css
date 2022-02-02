@@ -1,10 +1,6 @@
  
  .footer {
-    padding: 2rem 0px 2rem 0px;
-    /* background-image: url('/2.png');
-    background-size: auto 100%;
-    image-rendering: pixelated; */
-    font-family: 'ChronoType';
+    padding: 2rem 0px;
   }
 
   .grid {
@@ -19,11 +15,6 @@
     image-rendering: pixelated;
   }
   
-  .logo {
-    margin-left: 0.5rem;
-  }
-  
-
   .link {
     padding: 0.5rem 1rem;
     font-family: 'ChronoType';
@@ -32,23 +23,12 @@
     transition: 0.15s ease-in-out;
   }
 
-  .larger {
-    font-size: 2.5rem;
-  }
-
   .link:hover{
     color: #6b6b6b;
   }
 
   .right {
     margin-left: auto;
-
-  }
-
-  .padded {
-    padding: 1rem;
-    text-align: left;
-    color: #0965ce;
   }
 
   .Navbar{
@@ -59,15 +39,20 @@
     display: flex;
   }
 
+  .centered {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .contain {
     margin-right: 0%;
   }
 
-  
-
   .account {
     color: white;
-
   }
 
   .Brand{

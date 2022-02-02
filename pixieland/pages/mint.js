@@ -6,9 +6,9 @@ import { useWeb3React } from "@web3-react/core"
 import { formatEther, parseEther } from '@ethersproject/units'
 import useContract from '../web3/useContract'
 import abi from "../web3/houses.json";
+
+
 export default function Mint() {
-
-
 
     const { account } = useWeb3React();
     const contract = useContract("0xc6D4a3795B2877f9a57907A05e6ee8E41aFd3dB1", abi)
@@ -17,7 +17,6 @@ export default function Mint() {
       const house = await contract.mintHouse({value: parseEther("0.05"), gasPrice: 100000000000, gasLimit: 100000})
       console.log(house)
     }
-
 
     return (
       <div>

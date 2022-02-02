@@ -1,116 +1,62 @@
 
-/* @media (max-width: 400px){
-  
-  .container {
-    background-image: url("/mainimg.png");
-    background-repeat: no-repeat;
-    image-rendering: pixelated;
-    background-size:cover;
-    padding: 0 0rem;
-  }
-}
-
-@media (min-width:400px){
-  .container {
-    background-image: url("/mainimg.png");
-    background-repeat: no-repeat;
-    image-rendering: pixelated;
-    background-size: contain;
-    padding: 0 0rem;
-  }
-} */
-
-.container {
-  /* background-image: url("/mainimg.png");
-  background-repeat: no-repeat;
-  image-rendering: pixelated;
-  background-size: 100%; */
-  padding: 0 0rem;
-}
-
 .main {
   background-image: url("/floating_island_02.png");
-  /* background-size: 100vw; */
   background-repeat: no-repeat;
   image-rendering: pixelated;
   background-position: 50%;
   background-size:cover;
   height: 100vh;
-  padding: 11rem 0;
   flex: 1;
   display: flex;  
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-
 }
 
-.other {
-  display: flex;
-  align-items: center;
-  justify-content:space-around;
-  flex-wrap: wrap;
-  /* max-width: 1600px; */
-  padding: 1rem 0rem;
-
-}
-
-.griditem {
-  padding: 1rem;
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  border-radius: 20px;
-  margin: 10px;
-  font-size: 30px;
-  text-align: center;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
-  max-width: 550px;
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.15s ease;
+  max-width: 570px;
+  font-size: 1.7rem;
   font-family: "ChronoType";
 }
 
-.gridimage{
-  padding:1rem;
-  margin:1rem;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
-  filter: drop-shadow(8px 8px 8px black);
-}
-
-
-.gridimage:hover,
-.gridimage:focus,
-.gridimage:active {
-  transform: scale(1.1);
-  filter: drop-shadow(10px 10px 10px black);
-  
-}
-
-.main2 {
-  min-height: 100vh;
-  padding: 4rem 0;
+.centered {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.main3{
-  min-height: 100vh;
-  padding: 4rem 100px 0px 100px;
+.image {
+  padding: 1rem;
+  margin: 1rem;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.3s ease-in-out;
+  filter: drop-shadow(8px 8px 8px black);
+}
 
-
+.image:hover,
+.image:focus,
+.image:active {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 10px black);
 }
 
 .scrollimg{
   width: calc(100vw / 6);
   height: calc(100vw / 6);
+}
+
+.subtitle {
+  border-bottom: 2px solid black;
 }
 
 .scrollingimgs{
@@ -153,45 +99,23 @@
   line-height: 1.15;
   font-size: 6rem;
   padding-bottom: 100px;
+  font-family: 'ChronoType';
 }
 
-.minttitle {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-.head,
-.title,
-.description {
-  text-align: center;
-}
 
 .head {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
   transform: translateZ(50px);
-
-  
 }
-
 
 .grid {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+  max-width: 1600px;
 }
 
 @keyframes spinY{
@@ -201,16 +125,6 @@
   100%{
     transform: rotateX(360deg);
   }
-}
-
-.playbutton{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: inherit;
 }
 
 .arrowdown{
@@ -239,30 +153,6 @@
   }
 }
 
-.arrowup{
-  display: none;
-  opacity: 0.5;
-  border-radius: 40px;
-  position:fixed;
-  background-color: blue;
-  right: 10px;
-  bottom: 10px;
-  height: 80px;
-  width: 80px;
-}
-
-.arrowup:hover{
-  opacity: 1;
-}
-
-.hidden{
-  display: none;
-}
-
-.show{
-  display: block;
-}
-
 .rarityPart{
   justify-content: center;
   align-items: center;
@@ -280,14 +170,15 @@
 
 .rarityContent {
   display: flex;
-  padding-top: 10px;
+  padding: 2rem 2rem;
   justify-content:space-between;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .rarity {
-  width: 40%;
+  width: 60%;
   /* border-left: 2px solid black;
   border-bottom: 2px solid black; */
   font-family: ChronoType;
@@ -416,11 +307,11 @@
 @media (min-width: 1000px) {
   .rareImgs:hover,
   .rareImgs:focus,
-  .rareImgs:active {
-  transform: scale(1.1);
-  filter: drop-shadow(10px 10px 10px black);
-  
-}
+  .rareImgs:active
+  {
+    transform: scale(1.1);
+    filter: drop-shadow(10px 10px 10px black);
+  }
 }
 
 @keyframes OneOfOnes {
@@ -452,17 +343,14 @@
 
 .rareTitles{
   position: absolute;
-  /* padding: 0 1rem 1rem 1rem; */
   transform: translateX(15px);
 }
 
-.traitexp{
-  padding-top: 50px;
+.description{
+  padding: 2rem 0rem;
   font-family: ChronoType;
-  text-align: center;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
 }

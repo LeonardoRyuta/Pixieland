@@ -11,9 +11,11 @@ export default function Footer () {
                             <Image className={styles.footerimage} src={'/twitter.png'} width={40} height={40}/>
                         </a>
                     </div>
-                    {/* <div className={styles.padded}>
-                        <a className={`${styles.link} ${styles.larger}`} href='https://twitter.com/PixieLandNFT'>OpenSea</a>
-                    </div> */}
+                    <div className={styles.padded}>
+                        <a className={`${styles.link}`} href='https://discord.gg/FPkfRNPD8w'>
+                            <Image className={styles.footerimage} src={'/discord.png'} width={45} height={45}/>
+                        </a>
+                    </div>
                 </div>
             </footer>
         </div>
