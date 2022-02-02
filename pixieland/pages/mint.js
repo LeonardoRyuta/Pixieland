@@ -25,18 +25,18 @@ export default function Mint() {
             <Head>
                 <title>PixieLand | Mint</title>
                 <meta name="Pixieland" content="" />
-        <link rel="icon" href='/Butterfly.jpg' />
+                <link rel="icon" href='/Butterfly.jpg' />
             </Head>
             <div id="mintmain">
               <h1 className={styles.title}>
                 Mint
               </h1>
               <main className={styles.main} id="main">
-                  <div className={`${styles.grid}`} data-aos='fade-up'>
-                      <div className={styles.img}>
+                  <div className={`${styles.grid}`}>
+                      <div  className={styles.card}>
                         <Image id="mintimg" src="/23.gif" className="rounded" width={400} height={400}></Image>
                       </div>
-                      <div >
+                      <div  className={styles.card}>
                           <button
                             className={button.pixel2}
                             disabled
