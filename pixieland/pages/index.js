@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-  const houses = ['420', '421', '1424', '1581', '1824', '3824', '420', '420', '421', '1424', '1581', '1824', '3824']
+  const houses = ['420', '421', '1424', '1581', '1824', '3824', '420', '421', '1424', '1581', '1824', '3824']
 
   const rarities = [
     {text: 'Radioactive: 0.1%', class: 'rad'}, 
