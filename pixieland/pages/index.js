@@ -24,20 +24,7 @@ export default function Home() {
         <link rel="icon" href='/Butterfly.jpg' />
       </Head>
 
-      <main className={styles.main} id="main">
-        <h1 className={styles.title}>
-          Pixieland
-        </h1>
-        <svg 
-          onClick={()=>{scroll(0, (document.getElementById("info").offsetTop + 10))}} 
-          xmlns="http://www.w3.org/2000/svg" className={`${styles.arrowdown}`} 
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </main>
+      <main className={styles.main} id="main"></main>
 
       <div className={styles.scrollingimgs}>
         {
