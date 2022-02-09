@@ -250,36 +250,36 @@
 
 @media (max-width: 330px) {
   .rareImgs{
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
   }
 }
 @media (min-width: 330px) {
   .rareImgs{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 }
-@media (min-width: 378px) {
+@media (min-width: 381px) {
   .rareImgs{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
   }
 }
 @media (min-width: 430px){
+  .rareImgs{
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (min-width: 494px){
   .rareImgs{
     width: 300px;
     height: 300px;
   }
 }
-
-@media (min-width: 482px){
-  .rareImgs{
-    width: 350px;
-    height: 350px;
-  }
-}
-@media (min-width: 538px){
+@media (min-width: 597px){
   .rareImgs{
     width: 400px;
     height: 400px;
