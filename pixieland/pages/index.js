@@ -72,9 +72,9 @@ export default function Home() {
               {tabs.map((tab, index) => (
                 <span key={index} className={styles.tab}>
                   {currentTab[0] === tab[0] ?
-                    <button className={styles.enabled} onClick={() => {setTab(tab)}}>{tab[0]}</button>
+                    <button style={{color: tab[2]}} className={styles.enabled} onClick={() => {setTab(tab)}}>{tab[0]}</button>
                   :
-                    <button className={styles.disabled} onClick={() => {setTab(tab)}}>{tab[0]}</button>
+                    <button style={{color: tab[2]}} className={styles.disabled} onClick={() => {setTab(tab)}}>{tab[0]}</button>
                   }
                 </span>
               ))}
