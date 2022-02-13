@@ -4,7 +4,7 @@ import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  
+
   const tabs = [
     ['Radioactive', '0.1', '#7fff00'], 
     ['Ruby', '0.5', '#a90329'], 
@@ -22,7 +22,7 @@ export default function Home() {
       <Head> 
         <title>Pixieland | Home</title>
         <meta name="Pixieland" />
-        <link rel="icon" href='/Butterfly.jpg' />
+        <link rel="icon" href='/Butterfly.png' />
       </Head>
       <main className={styles.main}>
         <div className={styles.parent}>
