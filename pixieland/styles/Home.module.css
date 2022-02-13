@@ -1,4 +1,3 @@
-
 .main {
   image-rendering: pixelated;
   height: 100vh;
@@ -8,6 +7,15 @@
   align-items: center;
   justify-content: center;
   background-color: #1D0B1B;
+}
+
+.centered {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0.2rem;
 }
 
 .card {
@@ -28,6 +36,9 @@
   top: 0;
   left: 0;
   max-width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -179,10 +190,6 @@
   height: calc(100vw / 6);
 }
 
-.subtitle {
-  border-bottom: 2px solid black;
-}
-
 .head a:hover,
 .head a:focus,
 .head a:active {
@@ -234,4 +241,101 @@
 
 .item {
   padding-inline-end: 10px;
+}
+
+.paragraph{
+  color:rgb(91, 80, 165);
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+.previewSection{
+  /* overflow: hidden; */
+  -webkit-mask-image: linear-gradient(90deg,transparent,#000 20%,#000 50%,transparent 90%);
+  mask-image: linear-gradient(90deg,transparent,#000 20%,#000 50%,transparent 90%);
+  max-width: 100vw;
+}
+
+.housesDisplay1{
+  position: relative;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  animation: movingHouses1 50s ease infinite;
+}
+
+.housesDisplay2{
+  position: relative;
+  margin: 3rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
+  animation: movingHouses2 50s ease infinite;
+}
+
+.houses{
+  image-rendering: pixelated;
+  /* border: 4px solid black; */
+  margin: 0 1rem 0 1rem;
+  width: 9rem;
+}
+
+@keyframes movingHouses1{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(500px);
+  }
+  75%{
+    transform: translateX(-500px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes movingHouses2{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(-525px);
+  }
+  75%{
+    transform: translateX(525px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1188px){
+  .description{
+    font-family: ChronoType;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0rem;
+  }
+}
+@media (min-width: 1188px){
+  .description{
+    font-family: ChronoType;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 7rem;
+  
+  }
+}
+
+
+
+.subTitle{
+  color:rgb(168, 8, 147);
+  font-size: 5rem;
+  margin: 0%;
+}
+
+.paragarph{
+  color:rgb(54, 46, 104);
+  font-size: 1.5rem;
+  padding-top: 10px;
 }

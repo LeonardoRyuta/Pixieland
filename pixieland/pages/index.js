@@ -33,16 +33,51 @@ export default function Home() {
           <img src='/pixieland.png' className={styles.logo}/>
         </div>
       </main>
-      <main >
+      <main className={styles.centered}>
         <div className={styles.grid}>
-          <div>
-           {/* Place video here (We can change the text next to it later) */}
-          </div>
-          <div className={styles.card}>
+            <div className={styles.previewSection}>
+              <div className={styles.housesDisplay1}>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+              </div>
+              <div className={styles.housesDisplay2}>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+              </div>
+              <div className={styles.housesDisplay1}>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+                <img className={styles.houses} src="420.gif"/>
+              </div>
+            </div>
+          <div className={`${styles.card} ${styles.right}`}>
             <h1 className={styles.subtitle}>
               Phase 1
             </h1>
-            <p> 
+            <p className={styles.paragraph}> 
               10000 Pixiehouses sale. After phase 1 Pixieland houses will allow
               owners to display their NFTs and create their own space using our 
               developer kit.
@@ -51,7 +86,7 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           <div className={`${styles.card} ${styles.right}`}>
-            <p> 
+            <p className={styles.paragraph}> 
               Pixieland's first land sale will take place in Genesis city - 
               the core of our metaverse. Users who own land will be able to 
               place their pixie house and access the land editior where they 
