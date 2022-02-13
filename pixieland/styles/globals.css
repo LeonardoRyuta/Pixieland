@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: black;
+  background-color: #1D0B1B;
 	/* background: linear-gradient(-45deg, #23a6d5,  #23a6d5 , #23d5ab, #e73c7e, #ee7752, #e73c7e,#23a6d5 , #23a6d5);
 	background-size: 600% 600%; */
   padding: 0;
@@ -19,6 +19,10 @@ a {
   box-sizing: border-box;
 }
 
+p{
+  margin: 0;
+}
+
 @font-face {
   font-family: 'Pixelboy';
   src: url('./Pixeboy.ttf') format('truetype')
@@ -29,3 +33,7 @@ a {
   src: url('./ChronoType.ttf') format('truetype');
 }
 
+:root{
+  --translateLengthp: 500px;
+  --translateLengthn: -500px;
+}

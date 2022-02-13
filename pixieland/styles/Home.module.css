@@ -1,356 +1,205 @@
+@media (max-width: 1188px){
+  .section{
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 1188px){
+  .section{
+    padding: 0 10rem;
+  }
+}
 
-.main {
-  background-image: url("/background2.png");
-  background-repeat: no-repeat;
+.logoSection{
+
+}
+
+.logo{
+  padding-top: 20vh;
+  /* border: 2px solid white; */
+  width: 100%;
   image-rendering: pixelated;
-  background-position: 50%;
-  background-size: contain;
-  height: 100vh;
-  flex: 1;
-  display: flex;  
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: 0.15s ease;
-  max-width: 570px;
-  font-size: 1.7rem;
-  font-family: "ChronoType";
+.clouds{
+    /* border: 2px solid white; */
+    width: 100%;
+    image-rendering: pixelated;
 }
 
-.centered {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 1192px){
+ .grid{
+    display: flex; 
+    flex-direction: column-reverse;
+ }
+}
+@media (min-width: 1192px){
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  
+  }
+ }
+
+
+
+.previewSection{
+  /* overflow: hidden; */
+  -webkit-mask-image: linear-gradient(90deg,transparent,#000 20%,#000 50%,transparent 90%);
+  mask-image: linear-gradient(90deg,transparent,#000 20%,#000 50%,transparent 90%);
 }
 
-.image {
-  padding: 1rem;
-  margin: 1rem;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition: 0.3s ease-in-out;
-  filter: drop-shadow(8px 8px 8px black);
-}
-
-.image:hover,
-.image:focus,
-.image:active {
-  transform: scale(1.1);
-  filter: drop-shadow(10px 10px 10px black);
-}
-
-.scrollimg{
-  width: calc(100vw / 6);
-  height: calc(100vw / 6);
-}
-
-.subtitle {
-  border-bottom: 2px solid black;
-}
-
-.scrollingimgs{
-  display:inline-block;
+.housesDisplay1{
   position: relative;
-  white-space: pre;
-  overflow-block: none;
-  /* transform: translateY(5.3px); */
-  animation: scrollimgs 30s linear infinite; 
-}
-
-@keyframes scrollimgs {
-  0%{
-    left: 0%;
-  }
-  100%{
-    left: -100vw;
-  }
-}
-
-.head a:hover,
-.head a:focus,
-.head a:active {
-  animation: spinY 2s ease 0s ;
-  margin: 10rem;
-  padding-bottom: .5rem;
-  padding-top: .5rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  text-decoration: underline;
-  background-color: rgb(201, 201, 207);
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 100px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 6rem;
-  padding-bottom: 100px;
-  font-family: 'ChronoType';
-}
-
-
-.head {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  transform: translateZ(50px);
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1600px;
-}
-
-@keyframes spinY{
-  0%{
-    transform: rotateX(0deg) ;
-  }
-  100%{
-    transform: rotateX(360deg);
-  }
-}
-
-.arrowdown{
-  cursor:pointer;
-  transform: translateY(50px);
-  max-height: 80px;
-  max-width: 50px;
-  animation: arrowbounce 1.25s linear infinite;
-}
-
-@keyframes arrowbounce {
-  0%{
-    transform: translateY(50px);
-  }
-  30%{
-    transform: translateY(60px);
-  }
-  50%{
-    transform: translateY(50px);    
-  }
-  80%{
-    transform: translateY(60px);
-  }
-  100%{
-    transform: translateY(50px);
-  }
-}
-
-.rarityPart{
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
-  background-color:cornflowerblue;
-}
-
-.rarityTitle {
-  font-family: ChronoType;
-  font-weight:bold;
-  font-size: 4rem;
-  padding: 0.5rem;
-  /* border-bottom: 2px solid black; */
-}
-
-.rarityContent {
-  display: flex;
-  padding: 2rem 2rem;
-  justify-content:space-between;
-  align-items: center;
-  flex-wrap: wrap;
-
-}
-
-.rarity {
-  width: 60%;
-  /* border-left: 2px solid black;
-  border-bottom: 2px solid black; */
-  font-family: ChronoType;
-  font-size: 2.5rem;
-}
-
-.rad{
-  transition-duration: 1s;
-  transition-property: all;
-  background-color: chartreuse;
-  width: 1.5%;
-  box-shadow: 0px 0px 10px 5px rgb(166, 255, 0);
-}
-.rad:hover,
-.rad:focus,
-.rad:active{
-  box-shadow: -4px -3px 45px 21px rgb(166, 255, 0);
-}
-
-.ruby{
-  background: linear-gradient(135deg, rgba(169,3,41,1) 43%,rgba(143,2,34,1) 67%,rgba(143,2,34,1) 76%,rgba(143,2,34,1) 95%,rgba(143,2,34,1) 100%);
-  width: 7.5%;
-}
-
-.emerald{
-  background: linear-gradient(135deg, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 0%,rgba(82,177,82,1) 0%,rgba(82,177,82,1) 14%,rgba(82,177,82,1) 22%,rgba(0,138,0,1) 50%);
-  width: 15%;
-}
-
-.sapphire{
-  background: linear-gradient(135deg, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 3%,rgba(43,136,217,1) 3%,rgba(32,124,202,1) 36%,rgba(125,185,232,1) 100%);
-  width: 30%;
-}
-
-.gold{
-  background: linear-gradient(to bottom, rgb(252,234,187) 0%,rgb(248,181,0) 32%,rgb(248,181,0) 32%,rgb(252,205,77) 72%,rgb(251,223,147) 100%);
-  width: 45%;
-}
-
-.silver{
-  background: linear-gradient(135deg, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 83%,rgba(221,223,227,1) 83%,rgba(245,246,246,1) 100%);
-  width: 60%;
-}
-
-.copper{
-  background: linear-gradient(135deg, rgba(242,130,91,1) 3%,rgba(229,91,43,1) 100%,rgba(239,72,16,1) 100%);
-  width: 75%;
-}
-
-.filler{
-  font-size: 3rem;
-  margin: 0 0 0.5rem 0;
-  text-decoration:underline;
-}
-
-.rad,
-.ruby,
-.emerald,
-.sapphire,
-.gold,
-.silver,
-.copper{
-  height: 40px;
-  margin: 0.5rem 0 0.5rem 0;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px black
-  /* line-height: 2.5rem; */
-}
-
-@media (max-width: 330px) {
-  .rareImgs{
-    width: 50px;
-    height: 50px;
-  }
-}
-@media (min-width: 330px) {
-  .rareImgs{
-    width: 100px;
-    height: 100px;
-  }
-}
-@media (min-width: 381px) {
-  .rareImgs{
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (min-width: 430px){
-  .rareImgs{
-    width: 220px;
-    height: 220px;
-  }
-}
-
-@media (min-width: 494px){
-  .rareImgs{
-    width: 300px;
-    height: 300px;
-  }
-}
-@media (min-width: 597px){
-  .rareImgs{
-    width: 400px;
-    height: 400px;
-  }
-}
-
-.rareImgs{
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility:    hidden;
-  -ms-backface-visibility:     hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  border-radius: 5px;
-  background-size: 100%;
-  padding:1rem;
-  margin:1rem;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
-  filter: drop-shadow(8px 8px 8px black);
-  background-image: url("../public/1of1s/radioactive-1.png");
-  animation: OneOfOnes 5s infinite; 
-}
-
-@media (min-width: 1000px) {
-  .rareImgs:hover,
-  .rareImgs:focus,
-  .rareImgs:active
-  {
-    transform: scale(1.1);
-    filter: drop-shadow(10px 10px 10px black);
-  }
-}
-
-@keyframes OneOfOnes {
-  0%{
-    background-image: url("../public/1of1s/radioactive-1.png")
-  }
-  14.3%{
-    background-image: url("../public/1of1s/ruby-1.png")
-  }
-  28.6%{
-    background-image: url("../public/1of1s/emerald-1.png")
-  }
-  42.9%{
-    background-image: url("../public/1of1s/sapphire.png")
-  }
-  57.1%{
-    background-image: url("../public/1of1s/gold-1.png")
-  }
-  71.4%{
-    background-image: url("../public/1of1s/silver-1.png")
-  }
-  85.7%{  
-    background-image: url("../public/1of1s/copper-1.png")
-  }
-  100%{
-    background-image: url("../public/1of1s/radioactive-1.png")
-  }
-}
-
-.rareTitles{
-  position: absolute;
-  transform: translateX(15px);
-}
-
-.description{
-  padding: 2rem 0rem;
-  font-family: ChronoType;
-  font-size: 2rem;
+  margin: 3rem 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  animation: movingHouses1 30s ease infinite;
+}
+
+.housesDisplay2{
+  position: relative;
+  margin: 3rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
+  animation: movingHouses2 30s ease infinite;
+}
+
+.houses{
+  image-rendering: pixelated;
+  /* border: 4px solid black; */
+  margin: 0 1rem 0 1rem;
+  width: 9rem;
+}
+
+@keyframes movingHouses1{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(500px);
+  }
+  75%{
+    transform: translateX(-500px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes movingHouses2{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(-525px);
+  }
+  75%{
+    transform: translateX(525px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1188px){
+  .description{
+    font-family: ChronoType;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0rem;
+  }
+}
+@media (min-width: 1188px){
+  .description{
+    font-family: ChronoType;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 7rem;
+  
+  }
+}
+
+
+
+.subTitle{
+  color:rgb(168, 8, 147);
+  font-size: 5rem;
+  margin: 0%;
+}
+
+.paragarph{
+  color:rgb(54, 46, 104);
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+.raritySection{
+  display: inline-block;
+}
+
+@media (min-width: 470px){
+  .rarityCard{
+    display: flex;
+    height: 15rem;
+    width: 80vw;
+    /* border: 2px solid white; */
+  }
+  .rarity{
+    margin: 4rem 5rem;
+  }
+}
+@media (max-width: 470px){
+  .rarityCard{
+    /* display: flex; */
+    height: 15rem;
+    width: 80vw;
+    /* border: 2px solid white; */
+  }
+  .rarity{
+    margin: 4rem 2rem;
+  }
+}
+
+
+.raritySelection{
+  margin: 2rem 0;
+}
+
+.rarityContent{
+  margin: 4rem 0rem;
+}
+
+.invisible{
+  display: none;
+  
+}
+
+.oneofones{
+  width: 15rem;
+  width: 15rem;
+}
+
+.rareText{
+  color: wheat;
+}
+
+.rareButton{
+  font-family: ChronoType;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: rgb(54, 46, 104);
+  /* box-shadow: 2px 2px 4px rgb(168, 8, 147); */
+}
+
+.rareButtonClicked{
+  font-family: ChronoType;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  border-radius: 10px;
+  background-color: #2b1028;
+  border: none;
+  color: rgb(54, 46, 104);
+  box-shadow: 2px 2px 6px rgb(168, 8, 147);
 }
