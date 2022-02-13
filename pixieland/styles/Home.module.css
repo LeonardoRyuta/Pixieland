@@ -255,6 +255,12 @@
   max-width: 100vw;
 }
 
+@media (min-width: 800px ) {
+  .previewSection {
+    max-width: 800px;
+  }
+}
+
 .housesDisplay1{
   position: relative;
   margin: 3rem 0;
@@ -326,16 +332,8 @@
   }
 }
 
-
-
 .subTitle{
   color:rgb(168, 8, 147);
   font-size: 5rem;
   margin: 0%;
-}
-
-.paragarph{
-  color:rgb(54, 46, 104);
-  font-size: 1.5rem;
-  padding-top: 10px;
 }

@@ -4,9 +4,7 @@ import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-
-  const houses = ['420', '421', '1424', '1581', '1824', '3824', '420', '421', '1424', '1581', '1824', '3824']
-
+  
   const tabs = [
     ['Radioactive', '0.1', '#7fff00'], 
     ['Ruby', '0.5', '#a90329'], 
@@ -74,9 +72,12 @@ export default function Home() {
               </div>
             </div>
           <div className={`${styles.card} ${styles.right}`}>
-            <h1 className={styles.subtitle}>
-              Phase 1
-            </h1>
+            <p className={styles.paragraph}>
+              Mint and create with
+            </p>
+            <h1 className={styles.subTitle}>
+              Pixiehouses  
+            </h1> 
             <p className={styles.paragraph}> 
               10000 Pixiehouses sale. After phase 1 Pixieland houses will allow
               owners to display their NFTs and create their own space using our 
@@ -131,5 +132,3 @@ export default function Home() {
     </div>
   )
 }
-
-
