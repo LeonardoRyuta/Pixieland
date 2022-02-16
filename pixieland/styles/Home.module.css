@@ -228,7 +228,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   max-width: 1600px;
 }
 .smallGrid {
@@ -289,10 +289,10 @@
     transform: translateX(0);
   }
   25%{
-    transform: translateX(500px);
+    transform: translateX(50%);
   }
   75%{
-    transform: translateX(-500px);
+    transform: translateX(-50%);
   }
   100%{
     transform: translateX(0);
@@ -304,10 +304,10 @@
     transform: translateX(0);
   }
   25%{
-    transform: translateX(-525px);
+    transform: translateX(-51%);
   }
   75%{
-    transform: translateX(525px);
+    transform: translateX(51%);
   }
   100%{
     transform: translateX(0);

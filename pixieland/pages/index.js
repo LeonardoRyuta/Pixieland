@@ -44,31 +44,31 @@ export default function Home() {
                 <img className={styles.houses} src="23.gif"/>
                 <img className={styles.houses} src="9991.gif"/>
                 <img className={styles.houses} src="991.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/9512.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/9512.gif"/>
               </div>
               <div className={styles.housesDisplay2}>
                 <img className={styles.houses} src="420.gif"/>
                 <img className={styles.houses} src="9991.gif"/>
                 <img className={styles.houses} src="420.gif"/>
                 <img className={styles.houses} src="23.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/777.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/777.gif"/>
                 <img className={styles.houses} src="421.gif"/>
                 <img className={styles.houses} src="420.gif"/>
                 <img className={styles.houses} src="1581.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/234.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/234.gif"/>
                 <img className={styles.houses} src="991.gif"/>
               </div>
               <div className={styles.housesDisplay1}>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/11.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/21.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/14.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/1.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/104.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/415.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/2412.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/2415.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/1151.gif"/>
-                <img className={styles.houses} src="https://cloudflare-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/1616.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/11.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/21.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/14.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/1.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/104.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/415.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/2412.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/2415.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/1151.gif"/>
+                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/1616.gif"/>
               </div>
             </div>
           <div className={`${styles.card} ${styles.right}`}>
