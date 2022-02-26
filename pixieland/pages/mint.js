@@ -20,33 +20,75 @@ export default function Mint() {
 
     return (
       <div>
-        <div className={styles.container}>
-            <Head>
-                <title>PixieLand | Mint</title>
-                <meta name="Pixieland" content="" />
-                <link rel="icon" href='/Butterfly.jpg' />
-            </Head>
-            <div id="mintmain">
-              <h1 className={styles.title}>
-                Mint
-              </h1>
-              <main className={styles.main} id="main">
-                  <div className={`${styles.grid}`}>
-                      <div  className={styles.card}>
-                        <Image id="mintimg" src="/23.gif" className="rounded" width={400} height={400}></Image>
-                      </div>
-                      <div  className={styles.card}>
-                          <button
-                            className={button.pixel2}
-                            disabled
-                            style={{color: '#ffffff', opacity: '0.78'}}
-                          >
-                              MINT Houses
-                          </button>
-                      </div>
-                  </div>
-              </main>
+        <div>
+          <Head>
+            <title>PixieLand | Mint</title>
+            <meta name="Pixieland" content="" />
+            <link rel="icon" href='/Butterfly.jpg' />
+          </Head>
+          <div id="mintmain" className={styles.card}>
+
+            <div className={styles.previewSection}>
+              <div className={styles.housesDisplay1}>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse1.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse2.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse3.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse4.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse5.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse6.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse7.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse8.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse1.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse2.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse3.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse4.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse5.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse6.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse7.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse8.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse1.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse2.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse3.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse4.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse5.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse6.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse7.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse8.gif"/>
+                
+              </div>
+              <div  className={styles.mintPart}>
+                <button className={button.pixel2} disabled style={{color: '#ffffff', opacity: '0.78'}}>
+                  MINT House
+                </button>
+              </div> 
+              <div className={styles.housesDisplay2}>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse11.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse12.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse13.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse14.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse15.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse16.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse17.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse18.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse11.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse12.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse13.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse14.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse15.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse16.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse17.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse18.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse11.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse12.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse13.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse14.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse15.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse16.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse17.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse18.gif"/>
             </div>
+            </div>
+          </div>
         </div>
       </div>
     )

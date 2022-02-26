@@ -29,3 +29,33 @@ a {
   src: url('./ChronoType.ttf') format('truetype');
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #a414cc #b89bc5;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 1px;
+    position: fixed;
+    transition:width 0.5s;
+    -webkit-transition:width 0.5s;
+    -moz-transition: width 0.5s;
+  }
+
+  *::-webkit-scrollbar:hover{
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    /* background: #b89bc5 20%; */
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #a414cc;
+    border-radius: 28px;
+    border: 3px solid #b292b5;
+  }

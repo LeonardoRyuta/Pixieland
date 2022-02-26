@@ -28,49 +28,50 @@ export default function Home() {
         <div className={styles.parent}>
           <div className={styles.fade}></div>
           <img src='/clouds.png' className={styles.clouds}/>
-          <img src='/pixieland.png' className={styles.logo}/>
+          <img className={styles.logo}/>
         </div>
       </main>
       <main className={styles.centered}>
         <div className={styles.grid}>
             <div className={styles.previewSection}>
               <div className={styles.housesDisplay1}>
-                <img className={styles.houses} src="420.gif"/>
-                <img className={styles.houses} src="1424.gif"/>
-                <img className={styles.houses} src="1581.gif"/>
-                <img className={styles.houses} src="3824.gif"/>
-                <img className={styles.houses} src="421.gif"/>
-                <img className={styles.houses} src="7534.gif"/>
-                <img className={styles.houses} src="23.gif"/>
-                <img className={styles.houses} src="9991.gif"/>
-                <img className={styles.houses} src="991.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/9512.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse1.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse2.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse3.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse4.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse5.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse6.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse7.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse8.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse9.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse10.gif"/>
               </div>
               <div className={styles.housesDisplay2}>
-                <img className={styles.houses} src="420.gif"/>
-                <img className={styles.houses} src="9991.gif"/>
-                <img className={styles.houses} src="420.gif"/>
-                <img className={styles.houses} src="23.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/777.gif"/>
-                <img className={styles.houses} src="421.gif"/>
-                <img className={styles.houses} src="420.gif"/>
-                <img className={styles.houses} src="1581.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/234.gif"/>
-                <img className={styles.houses} src="991.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse11.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse12.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse13.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse14.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse15.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse16.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse17.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse18.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse19.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse20.gif"/>
               </div>
               <div className={styles.housesDisplay1}>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/11.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/21.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/14.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/1.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/104.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/415.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/2412.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/2415.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/1151.gif"/>
-                <img className={styles.houses} src="https://cf-ipfs.com/ipfs/Qmc3SHkH8jZRaJnJYELJnVHeU4SydiqG1sGUCgoXL5cLsb/1616.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse21.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse22.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse23.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse24.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse25.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse26.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse27.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse28.gif"/>
+                <img className={styles.houses} src="/Pixiehouses/Pixiehouse29.gif"/>
+                <img className={styles.houses} src="421.gif"/>
               </div>
             </div>
+            
           <div className={`${styles.card} ${styles.right}`}>
             <p className={styles.paragraph}>
               Mint and create with
