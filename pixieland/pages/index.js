@@ -71,7 +71,6 @@ export default function Home() {
                 <img className={styles.houses} src="421.gif"/>
               </div>
             </div>
-            
           <div className={`${styles.card} ${styles.right}`}>
             <p className={styles.paragraph}>
               Mint and create with
