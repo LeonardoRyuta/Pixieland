@@ -88,11 +88,7 @@ export default function Home() {
         <div className={styles.grid}>
           <div className={`${styles.card} ${styles.right}`}>
             <p className={styles.paragraph}> 
-              Pixieland's first land sale will take place in Genesis city - 
-              the core of our metaverse. Users who own land will be able to 
-              place their pixie house and access the land editior where they 
-              can fully customize their land and use the developer kit. 
-              A token will also be made which will be used in the upcoming game.
+              {"Pixieland's first land sale will take place in Genesis city - the core of our metaverse. Users who own land will be able to place their pixie house and access the land editior where they can fully customize their land and use the developer kit. A token will also be made which will be used in the upcoming game."}
             </p>
           </div>
           <div className={`${styles.pixelated} ${styles.city}`}>
