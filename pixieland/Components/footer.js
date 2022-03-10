@@ -7,15 +7,15 @@ export default function Footer () {
             <footer className={styles.footer}>
                 <div className={styles.grid}>
                     <div className={styles.padded}>
-                        <a className={`${styles.link}`} href='https://twitter.com/PixieLandNFT'>
+                        <a className={`${styles.link}`} href='https://twitter.com/PixieLandNFT' target="_blank">
                             <Image className={styles.footerimage} src={'/twitter.png'} width={40} height={40}/>
                         </a>
                     </div>
-                    <div className={styles.padded}>
+                    {/* <div className={styles.padded}>
                         <a className={`${styles.link}`} href='https://discord.gg/FPkfRNPD8w'>
                             <Image className={styles.footerimage} src={'/discord.png'} width={45} height={45}/>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </footer>
         </div>

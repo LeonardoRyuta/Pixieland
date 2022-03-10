@@ -1,6 +1,17 @@
 html,
 body {
-  background-color: #1D0B1B;
+  background-image: url(../public/landscape.PNG);
+  background-size: contain;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-color: #229df2;
+  /* background: linear-gradient(0deg,transparent,#229df2 50%,#229df2 50%,transparent 90%);; */
+  /* background-image: url(../public/landscape.PNG);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat; */
+  /* background-color: #1D0B1B; */
 	/* background: linear-gradient(-45deg, #23a6d5,  #23a6d5 , #23d5ab, #e73c7e, #ee7752, #e73c7e,#23a6d5 , #23a6d5);
 	background-size: 600% 600%; */
   padding: 0;
@@ -46,7 +57,7 @@ a {
   }
 
   *::-webkit-scrollbar:hover{
-    width: 15px;
+    width: 2px;
   }
 
   *::-webkit-scrollbar-track {
@@ -55,7 +66,11 @@ a {
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #a414cc;
+    background-color: gray;
     border-radius: 28px;
     border: 3px solid #b292b5;
+  }
+
+  button{
+    background-color: transparent;
   }

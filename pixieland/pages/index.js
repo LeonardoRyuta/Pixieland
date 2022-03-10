@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import styles from '../styles/Home.module.css'
+import { Mint } from './mint'
+import { FAQ } from './FAQ'
+import { TeamDisplay } from './teamDisplay'
+import Roadmap from './roadMap'
 
 export default function Home() {
 
@@ -17,6 +21,13 @@ export default function Home() {
 
   const [currentTab, setTab] = useState(tabs[0])
 
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <div>
       <Head> 
@@ -24,7 +35,15 @@ export default function Home() {
         <meta name="Pixieland" />
         <link rel="icon" href='/Butterfly.png' />
       </Head>
-      <main className={styles.main}>
+      <div className={styles.parent}>
+        <div className={styles.flexcenter}>
+          <div className={styles.fade}></div>
+          <img className={styles.butterflyLogo} id="butterflyLogo" src='/Butterfly.png'></img>
+        </div>
+      </div>
+      <main className={styles.main1}>
+        <div style={{display:"none"}} id="scrollUp" className={styles.scrollUp} onClick={()=>{scrollUp()}}>
+        </div>
         <div className={styles.parent}>
           <div className={styles.fade}></div>
           <img src='/clouds.png' className={styles.clouds}/>
@@ -71,7 +90,7 @@ export default function Home() {
                 <img className={styles.houses} src="421.gif"/>
               </div>
             </div>
-          <div className={`${styles.card} ${styles.right}`}>
+          <div id="About" className={`${styles.card} ${styles.right}`}>
             <p className={styles.paragraph}>
               Mint and create with
             </p>
@@ -85,7 +104,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={styles.grid}>
+        <div className={styles.grid1}>
           <div className={`${styles.card} ${styles.right}`}>
             <p className={styles.paragraph}> 
               {"Pixieland's first land sale will take place in Genesis city - the core of our metaverse. Users who own land will be able to place their pixie house and access the land editior where they can fully customize their land and use the developer kit. A token will also be made which will be used in the upcoming game."}
@@ -95,7 +114,10 @@ export default function Home() {
             <Image src='/city.png' width={500} height={500}></Image>
           </div>
         </div>
-        <div className={styles.grid}>
+        <div id="Mint">
+          <Mint/>
+        </div>
+        <div className={styles.grid1} id="Rarities">
           <div className={`${styles.card} ${styles.right}`}>
             <h1 className={styles.subtitle}>
               Rarities
@@ -124,7 +146,17 @@ export default function Home() {
             <Image src={`/1of1s/${currentTab[0].toLowerCase()}.gif`} width={400} height={400}></Image>
           </div>
         </div>
+        <div>
+          {/* <Roadmap/> */}
+        </div>
+        <div id="FAQ">
+          <FAQ></FAQ>
+        </div>
+        <div id="Team" className={styles.grid1}>
+          <TeamDisplay/>
+        </div>
       </main>
+      {/* <Bgimg></Bgimg> */}
     </div>
   )
 }

@@ -1,0 +1,105 @@
+.main{
+    image-rendering: pixelated;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    margin-bottom: 5rem;
+    margin-top: 0px;
+}
+
+.faqContent {
+    margin: 1rem;
+}
+
+.item{
+    width: 100%;
+    background-color: antiquewhite;
+    margin: 1rem 0;
+    border-radius: 20px;
+}
+
+.itemContent{
+    font-family: 'ChronoType';
+    font-size: 2rem;
+    height: 100v;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    transition: color 2s;
+}
+
+.toggle{ 
+    text-align: right;
+    /* width: 100%; */
+    user-select: none;
+    cursor: pointer;
+}
+
+.alignLeft{
+    text-align: left;
+    width: 100%;
+}
+
+.pixelFont{
+    font-family: "ChronoType";
+}
+
+.pixelFontTitle{
+    font-family: "ChronoType";
+    font-size: 5rem;
+    color:rgb(0, 0, 0);
+}
+
+.answer{
+    position: relative;
+    overflow: hidden;
+    margin-top: 0px;
+    height: 0px;
+}
+
+.answerContent{
+    position: relative;
+    overflow: hidden;
+    margin: 1rem;
+
+}
+
+.unhide {
+    animation: unhide 0.5s linear;
+}
+
+.hide {
+    animation: unhide 0.5s linear reverse;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes unhide {
+    100% {
+        height: auto;
+        max-height: auto;
+    }
+}
+
+.richtext:before, .richtext:after {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+}
+
+.richtext:after {
+    clear: both;
+}
+
+.heightauto{
+    height: auto;
+    max-height:auto;
+}
