@@ -39,7 +39,7 @@ export default function Menu () {
                         </Nav>
                         <Nav className={styles.connectWallet}>
                             {/* <a className={`${styles.link} ${styles.account}`}><Account triedToEagerConnect={triedToEagerConnect} /></a> */}
-                            <a className={`${styles.link}`} href='https://twitter.com/PixieLandNFT' target="_blank">
+                            <a className={`${styles.link}`} href='https://twitter.com/PixieLandNFT' target="_blank" rel="noreferrer">
                                 <img className={styles.twitterLogo} src={'/twitter.png'} width={40}/>
                             </a>
                         </Nav>

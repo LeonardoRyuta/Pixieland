@@ -141,7 +141,7 @@ export class Mint extends Component {
                       </div>
                     </div>
                     :
-                    <button className={`${styles.link} ${styles.account}`} onClick={()=>{this.connect()}}>Connect to Wallet</button>  
+                    <button className={`${styles.connectWallet}`} onClick={()=>{this.connect()}}>Connect to Wallet</button>  
                   }
                 </div> 
                 <div className={styles.housesDisplay2}>

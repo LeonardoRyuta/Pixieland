@@ -30,7 +30,7 @@ export class TeamDisplay extends Component {
                             <br/>
                             Front-end Dev
                         </p>
-                        <a className={styles.twitterLink} href='https://twitter.com/leo_ryuta' target="_blank">
+                        <a className={styles.twitterLink} href='https://twitter.com/leo_ryuta' target="_blank" rel="noreferrer">
                             <img src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c011b3741a9b3bb28169_Vector%20(8).svg"/>
                         </a>
                     </div>
@@ -45,7 +45,7 @@ export class TeamDisplay extends Component {
                             <br/>
                             Smart Contract Dev
                         </p>
-                        <a className={styles.twitterLink} href='https://twitter.com/cesarhuret' target="_blank">
+                        <a className={styles.twitterLink} href='https://twitter.com/cesarhuret' target="_blank" rel="noreferrer">
                             <img src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c011b3741a9b3bb28169_Vector%20(8).svg"/>
                         </a>
                     </div>
@@ -60,7 +60,7 @@ export class TeamDisplay extends Component {
                             <br/>
                             Smart Contract Dev
                         </p>
-                        <a className={styles.twitterLink} href='https://twitter.com/flogi_eth' target="_blank">
+                        <a className={styles.twitterLink} href='https://twitter.com/flogi_eth' target="_blank" rel="noreferrer">
                             <img src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c011b3741a9b3bb28169_Vector%20(8).svg"/>
                         </a>
                     </div>
@@ -75,7 +75,7 @@ export class TeamDisplay extends Component {
                             <br/>
                             Smart Contract Dev
                         </p>
-                        <a className={styles.twitterLink} href='' target="_blank">
+                        <a className={styles.twitterLink} href='' target="_blank" rel="noreferrer">
                             <img src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c011b3741a9b3bb28169_Vector%20(8).svg"/>
                         </a>
                     </div>
