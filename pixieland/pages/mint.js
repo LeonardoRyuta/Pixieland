@@ -9,66 +9,57 @@ import useContract from '../web3/useContract'
 import { Component } from 'react'
 import abi from "../web3/houses.json";
 
-export class Mint extends Component {
+export default function Mint(){
   // const { account } = useWeb3React();
 
-  constructor(){
-    super()
-    this.state = {
-      account: '',
-      connected: false
-    }
-    this.amountToBuy = 1
-    // this.contract = useContract("0xc6D4a3795B2877f9a57907A05e6ee8E41aFd3dB1", abi)
-  }
-    // const { account } = useWeb3React();
-    // const contract = useContract("0xc6D4a3795B2877f9a57907A05e6ee8E41aFd3dB1", abi)
+  // constructor(){
+  //   super()
+  //   this.state = {
+    var account= ''
+    var connected= false
+  //   }
+    var amountToBuy = 1
+  //   // const contract = useContract("0xc6D4a3795B2877f9a57907A05e6ee8E41aFd3dB1", abi)
+  // }
+  //   // const { account } = useWeb3React();
+  //   // const contract = useContract("0xc6D4a3795B2877f9a57907A05e6ee8E41aFd3dB1", abi)
 
-    // async mint()  {
-    //   const house = await this.contract.mintHouse({value: parseEther("0.05"), gasPrice: 100000000000, gasLimit: 100000})
-    //   console.log(house)
-    // }
+  //   // async mint()  {
+  //   //   const house = await this.contract.mintHouse({value: parseEther("0.05"), gasPrice: 100000000000, gasLimit: 100000})
+  //   //   console.log(house)
+  //   // }
 
-    async connect(){
+    const connect = async () => {
       try {
         if(window.ethereum) {
           const accounts = await window.ethereum.request({method: 'eth_requestAccounts'})
-          this.setState({account: accounts[0], connected: true})
+          account= accounts[0]
+          connected= true
+          showMintPart()
         }
       } catch(e) {
         console.log(e)
       }
     }
 
-    componentDidMount() {
-      document.addEventListener('scroll', ()=>{
-        this.inView();
-      })
-    }
-    
-    inView() {
-      console.log("hih")
-      var counter;
-      counter = document.getElementById('About');
-      if (counter.getBoundingClientRect().top <= window.innerHeight) {
-        document.getElementById("scrollUp").style.display = ""
-      } else {
-        document.getElementById("scrollUp").style.display = "none"
+    const showMintPart = () => {
+      if (connected === true) {
+        document.getElementById("MintingSection").className = `${styles.mintContent}`
+        document.getElementById("connectButton").className = `${styles.hidden}`
       }
     }
 
-    addCounter(e){
+    const addCounter = (e) =>{
       var innerHTML = e.target.innerHTML
       if (innerHTML === "+" && this.amountToBuy < 15) {
-        this.amountToBuy++
-        document.getElementById("amountToBuy").innerHTML = this.amountToBuy
-      } else if(this.amountToBuy != 1 && innerHTML === "-") {
-        this.amountToBuy--
-        document.getElementById("amountToBuy").innerHTML = this.amountToBuy
+        amountToBuy++
+        document.getElementById("amountToBuy").innerHTML = amountToBuy
+      } else if(amountToBuy != 1 && innerHTML === "-") {
+        amountToBuy--
+        document.getElementById("amountToBuy").innerHTML = amountToBuy
       }
     }
 
-    render(){
       return (
         <div>
           <div>
@@ -108,14 +99,12 @@ export class Mint extends Component {
                   
                 </div>
                 <div  className={styles.mintPart}>
-                {
-                  this.state.connected ?
-                    <div className={styles.mintContent}>
+                    <div id="MintingSection" className={`${styles.mintContent} ${styles.hidden}`}>
                       <div style={{textAlign:"center"}} className={styles.tab}>
                         Public Address:
                         <br/>
                         <p style={{fontSize:"1rem"}}>
-                          {this.state.account}
+                          {account}
                         </p>  
                       </div>
                       <div className={styles.tab}>
@@ -123,13 +112,13 @@ export class Mint extends Component {
                           Amout you are going to mint (max 15):
                         </div>
                         <div className={styles.flexCenter}>
-                          <button onClick={(e)=>{this.addCounter(e)}} className={styles.addminusButton}>
+                          <button onClick={(e)=>{addCounter(e)}} className={styles.addminusButton}>
                             -
                           </button>
                           <p id="amountToBuy" className={styles.amountToBuy}>
-                            {this.amountToBuy}
+                            {amountToBuy}
                           </p>
-                          <button onClick={(e)=>{this.addCounter(e)}} className={styles.addminusButton}>
+                          <button onClick={(e)=>{addCounter(e)}} className={styles.addminusButton}>
                             +
                           </button>
                         </div>
@@ -140,9 +129,9 @@ export class Mint extends Component {
                         </div>
                       </div>
                     </div>
-                    :
-                    <button className={`${styles.connectWallet}`} onClick={()=>{this.connect()}}>Connect to Wallet</button>  
-                  }
+                    <div id="connectButton">
+                      <button className={`${styles.connectWallet}`} onClick={()=>{connect()}}>Connect to Wallet</button> 
+                    </div> 
                 </div> 
                 <div className={styles.housesDisplay2}>
                   <img className={styles.houses} src="/Pixiehouses/Pixiehouse11.gif"/>
@@ -175,5 +164,4 @@ export class Mint extends Component {
           </div>
         </div>
     )
-  }
 }

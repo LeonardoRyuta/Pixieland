@@ -4,16 +4,10 @@ import { useState } from 'react'
 import { Component } from 'react'
 import styles from '../styles/faq.module.css'
 
-export class FAQ extends Component {
-    
-    constructor() {
-        super()
+export default function FAQ()  {
+    const delay = ms => new Promise(res => setTimeout(res, ms))
 
-    }
-
-    delay = ms => new Promise(res => setTimeout(res, ms))
-
-    async changeToggle(e){
+    const changeToggle = async (e) => {
         var answer;
         var h = 210;
         if (e.target.id === "closed") {
@@ -24,7 +18,7 @@ export class FAQ extends Component {
             answer = e.target.parentElement.nextSibling
             for (var x=0;x<h;x+=20) {
                 answer.style.height = `${x}px`
-                await this.delay(1)
+                await delay(1)
             }
         } else {
             e.target.id = "closed"
@@ -35,13 +29,12 @@ export class FAQ extends Component {
             }
             for (var x=0;x<h;x+=20) {
                 answer.style.height = `${h-x}px`
-                await this.delay(1)
+                await delay(1)
             }
             answer.style.height = "0px"
         }
     }
     
-    render(){
         return (
             <div className={styles.main}>
                 <h1 className={styles.pixelFontTitle}>FAQ</h1>
@@ -52,7 +45,7 @@ export class FAQ extends Component {
                             <div className={styles.alignLeft}>
                                 What are NFTs?
                             </div>
-                            <div className={styles.toggle} id="closed" onClick={(e)=>{this.changeToggle(e)}}>
+                            <div className={styles.toggle} id="closed" onClick={(e)=>{changeToggle(e)}}>
                                 +
                             </div>
                         </div>
@@ -77,7 +70,7 @@ export class FAQ extends Component {
                             <div className={styles.alignLeft}>
                                 How do i buy a Pixiehouse?
                             </div>
-                            <div className={styles.toggle} id="closed" onClick={(e)=>{this.changeToggle(e)}}>
+                            <div className={styles.toggle} id="closed" onClick={(e)=>{changeToggle(e)}}>
                                 +
                             </div>
                         </div>
@@ -103,7 +96,7 @@ export class FAQ extends Component {
                             <div className={styles.alignLeft}>
                                 When is the mint date?
                             </div>
-                            <div className={styles.toggle} id="closed" onClick={(e)=>{this.changeToggle(e)}}>
+                            <div className={styles.toggle} id="closed" onClick={(e)=>{changeToggle(e)}}>
                                 +
                             </div>
                         </div>
@@ -128,7 +121,7 @@ export class FAQ extends Component {
                             <div className={styles.alignLeft}>
                                 What is the utility?
                             </div>
-                            <div className={styles.toggle} id="closed" onClick={(e)=>{this.changeToggle(e)}}>
+                            <div className={styles.toggle} id="closed" onClick={(e)=>{changeToggle(e)}}>
                                 +
                             </div>
                         </div>
@@ -149,4 +142,3 @@ export class FAQ extends Component {
             </div>
           )
     }
-}

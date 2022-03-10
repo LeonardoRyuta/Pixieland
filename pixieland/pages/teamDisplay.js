@@ -4,16 +4,9 @@ import { useState } from 'react'
 import { Component } from 'react'
 import styles from '../styles/teamDisplay.module.css'
 
-export class TeamDisplay extends Component {
-    
-    constructor() {
-        super()
+export default function TeamDisplay(){
 
-    }
 
-    delay = ms => new Promise(res => setTimeout(res, ms))
-    
-    render(){
         return (
             <div className={styles.main}>
                 <h1 className={styles.Title}>
@@ -83,4 +76,3 @@ export class TeamDisplay extends Component {
             </div>
           )
     }
-}

@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
+import { useEffect } from 'react'
 import styles from '../styles/Home.module.css'
-import { Mint } from './mint'
-import { FAQ } from './FAQ'
-import { TeamDisplay } from './teamDisplay'
+import FAQ  from './FAQ'
+import TeamDisplay from './teamDisplay'
 import Roadmap from './roadMap'
+import Mint from './mint'
 
 export default function Home() {
 
@@ -20,6 +21,23 @@ export default function Home() {
   ]
 
   const [currentTab, setTab] = useState(tabs[0])
+
+  useEffect(() => {
+    document.addEventListener('scroll', ()=>{
+      inView();
+    })
+  }, [])
+
+  const inView = () => {
+    console.log("hih")
+    var counter;
+    counter = document.getElementById('About');
+    if (counter.getBoundingClientRect().top <= window.innerHeight) {
+      document.getElementById("scrollUp").style.display = ""
+    } else {
+      document.getElementById("scrollUp").style.display = "none"
+    }
+  }
 
   const scrollUp = () => {
     window.scrollTo({
