@@ -14,6 +14,7 @@ export default function FAQ()  {
             e.target.id = "opened"
             for (var y=0;y<45;y++) {
                 e.target.style.transform = `rotateZ(${y}deg)`
+                await delay(1)
             }
             answer = e.target.parentElement.nextSibling
             for (var x=0;x<h;x+=20) {
@@ -26,8 +27,9 @@ export default function FAQ()  {
             answer.className = `${styles.answer}`
             for (var y=0;y<45;y++) {
                 e.target.style.transform = `rotateZ(${45-y}deg)`
+                await delay(1)
             }
-            for (var x=0;x<h;x+=20) {
+            for (var x=0;x<h;x+=10) {
                 answer.style.height = `${h-x}px`
                 await delay(1)
             }

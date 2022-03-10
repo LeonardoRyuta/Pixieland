@@ -52,7 +52,7 @@ export default function Mint(){
 
     const addCounter = (e) =>{
       var innerHTML = e.target.innerHTML
-      if (innerHTML === "+" && this.amountToBuy < 15) {
+      if (innerHTML === "+" && amountToBuy < 15) {
         amountToBuy++
         document.getElementById("amountToBuy").innerHTML = amountToBuy
       } else if(amountToBuy != 1 && innerHTML === "-") {
@@ -64,11 +64,6 @@ export default function Mint(){
       return (
         <div>
           <div>
-            <Head>
-              <title>PixieLand | Mint</title>
-              <meta name="Pixieland" content="" />
-              <link rel="icon" href='/Butterfly.jpg' />
-            </Head>
             <div id="mintmain" className={styles.card}>
 
               <div className={styles.previewSection}>
@@ -131,7 +126,7 @@ export default function Mint(){
                       </div>
                     </div>
                     <div id="connectButton">
-                      <button className={`${styles.connectWallet}`} onClick={()=>{connect()}}>Connect to Wallet</button> 
+                      <button className={`${styles.connectWallet}`} onClick={()=>{connect()}}>Connect Wallet</button> 
                     </div> 
                 </div> 
                 <div className={styles.housesDisplay2}>

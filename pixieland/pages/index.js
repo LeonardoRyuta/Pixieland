@@ -29,7 +29,6 @@ export default function Home() {
   }, [])
 
   const inView = () => {
-    console.log("hih")
     var counter;
     counter = document.getElementById('About');
     if (counter.getBoundingClientRect().top <= window.innerHeight) {
@@ -174,7 +173,6 @@ export default function Home() {
           <TeamDisplay/>
         </div>
       </main>
-      {/* <Bgimg></Bgimg> */}
     </div>
   )
 }

@@ -111,7 +111,7 @@
 
   .sideLogo:hover {
     /* width: 5.2rem; */
-    transform: scale(1.05) rotateZ(350deg);
+    transform: scale(1.1) rotateZ(350deg);
   }
 
   .twitterLogo{
