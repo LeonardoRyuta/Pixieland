@@ -14,7 +14,7 @@ export default function TeamDisplay(){
                 </h1>
                 <div className={styles.teamPart}>
                     <div className={styles.teamMember}>
-                        <img onClick={()=>{window.open('https://twitter.com/leo_ryuta', '_blank')}} src='https://pbs.twimg.com/profile_images/1462768787095269384/KW5ub6U5_400x400.jpg' className={styles.pfp}></img>
+                        <img onClick={()=>{window.open('https://twitter.com/leo_ryuta', '_blank')}} src='/pfps/LeoTwitterPFP.jpg' className={styles.pfp}></img>
                         <h3 className={styles.Name}>
                             Leo
                         </h3>
