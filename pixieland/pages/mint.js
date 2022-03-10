@@ -35,6 +35,7 @@ export default function Mint(){
           const accounts = await window.ethereum.request({method: 'eth_requestAccounts'})
           account= accounts[0]
           connected= true
+          document.getElementById("accountAddress").innerHTML = account
           showMintPart()
         }
       } catch(e) {
@@ -103,7 +104,7 @@ export default function Mint(){
                       <div style={{textAlign:"center"}} className={styles.tab}>
                         Public Address:
                         <br/>
-                        <p style={{fontSize:"1rem"}}>
+                        <p id="accountAddress" style={{fontSize:"1rem"}}>
                           {account}
                         </p>  
                       </div>
