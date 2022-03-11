@@ -36,7 +36,7 @@ export default function Roadmap() {
         <div className={styles.Content}>
           The early access version of the Pixieland game will be released for Pixiehouse holders.
           <br/>
-          In the early access version users won't be able to interact with land yet, however, users will be able to interact with other players.
+          In the early access version users won&apos;t be able to interact with land yet, however, users will be able to interact with other players.
         </div>
       </div>
 
