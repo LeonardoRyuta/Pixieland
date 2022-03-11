@@ -64,6 +64,9 @@
     position: relative;
     overflow: hidden;
     margin: 1rem;
+    font-family: "ChronoType";
+    line-height: 2rem;
+    font-size: 1.5rem;
 
 }
 

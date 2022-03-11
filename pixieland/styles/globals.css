@@ -40,16 +40,13 @@ a {
   src: url('./ChronoType.ttf') format('truetype');
 }
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
   * {
     scrollbar-width: auto;
     scrollbar-color: #a414cc #b89bc5;
   }
 
-  /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 1px;
+    width: 2px;
     position: fixed;
     transition:width 0.5s;
     -webkit-transition:width 0.5s;
@@ -57,11 +54,11 @@ a {
   }
 
   *::-webkit-scrollbar:hover{
-    width: 2px;
+    /* width: 2px; */
   }
 
   *::-webkit-scrollbar-track {
-    /* background: #b89bc5 20%; */
+    background: #b89bc5 20%;
     background: transparent;
   }
 

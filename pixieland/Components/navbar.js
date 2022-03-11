@@ -19,6 +19,12 @@ export default function Menu () {
         doc.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
     }
 
+    const scrollToTopOfElement = (e)=>{
+        // console.log(e.target.innerHTML)
+        var doc = document.getElementById(`${e.target.innerHTML}`);
+        doc.scrollIntoView({behavior: "smooth"});
+    }
+
     return(
             <div className={styles.mainNav}>
                 <Navbar bg='transparent'  variant="light" expand="lg">
@@ -31,6 +37,7 @@ export default function Menu () {
                             <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>About</a>
                             <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>Mint</a>
                             <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>Rarities</a>
+                            <a onClick={(e)=>{scrollToTopOfElement(e)}} className={styles.link}>Roadmap</a>
                             <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>FAQ</a>
                             <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>Team</a>
                             {/* <Link href='/map'><a className={styles.link}>Map</a></Link>

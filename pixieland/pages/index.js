@@ -163,8 +163,8 @@ export default function Home() {
             <Image src={`/1of1s/${currentTab[0].toLowerCase()}.gif`} width={400} height={400}></Image>
           </div>
         </div>
-        <div>
-          {/* <Roadmap/> */}
+        <div id="Roadmap">
+          <Roadmap/>
         </div>
         <div id="FAQ">
           <FAQ></FAQ>
