@@ -61,7 +61,7 @@ export default function FAQ()  {
                                 <br/>
                                 2. Make sure you have enough Ethereum to mint one of our NFTs.
                                 <br/>
-                                3. Click the "Mint House" button on the mint section and approve the transaction.
+                                3. Click the &quot;Mint House&quot; button on the mint section and approve the transaction.
                                 <br/>
                                 4. Once the transaction has gone through, check out your freshly minted NFT on OpenSea.
                             </div>
