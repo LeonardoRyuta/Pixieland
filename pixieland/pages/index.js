@@ -134,7 +134,8 @@ export default function Home() {
         <div id="Mint">
           <Mint/>
         </div>
-        <div className={styles.grid1} id="Rarities">
+
+        <div className={styles.grid2} id="Rarities">
           <div className={`${styles.card} ${styles.right}`}>
             <h1 className={styles.subtitle}>
               Rarities
@@ -159,10 +160,54 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={`${styles.pixelated} ${styles.city}`}>
-            <Image src={`/1of1s/${currentTab[0].toLowerCase()}.gif`} width={400} height={400}></Image>
+          <div className={`${styles.pixelated} ${styles.city} ${styles.traitsBox} ${styles.chronoType}`}>
+            <div style={{textAlign:"center", width:"100%", fontFamily:"ChronoType", fontSize:"2.5rem"}}>
+              Some Traits:
+            </div>
+            {/* <Image src={`/1of1s/${currentTab[0].toLowerCase()}.gif`} width={400} height={400}></Image> */}
+            <div className={`${styles.pixelated} ${styles.city} ${styles.traitsBox}`}>
+              <div className={styles.trait}>
+                <h4>Bars</h4>
+                <Image src={`/bars/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+              </div>
+              <div className={styles.trait}>
+                <h4>Chimney</h4>
+                <Image src={`/chimney/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+              </div>
+              <div className={styles.trait}> 
+                <h4>Door</h4>
+                <Image src={`/door/${currentTab[0].toLowerCase()}_closed.png`} width={100} height={100}></Image>
+              </div>
+              {/* <div className={styles.trait}>
+                <h4>Doormat</h4>
+                <Image src={`/doormat/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+              </div> */}
+              <div className={styles.trait}>
+                <h4>Flower Pots</h4>
+                <Image src={`/flower_pots/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+              </div>
+              <div className={styles.trait}>
+                <h4>Lamps</h4>
+                <Image src={`/outdoor_lamps/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+              </div>
+              <div className={styles.trait}>
+                <h4>Satellite Dish</h4>
+                <Image src={`/satellite_dish/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+              </div>
+              <div className={styles.trait}>
+                <h4>Solarpanels</h4>
+                <Image src={`/solarpanels/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+              </div>
+              <div className={styles.trait}>
+                <h4>Window</h4>
+                <Image src={`/window_color/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image> 
+              </div>
+            </div>
+
+
           </div>
         </div>
+
         <div id="Roadmap">
           <Roadmap/>
         </div>

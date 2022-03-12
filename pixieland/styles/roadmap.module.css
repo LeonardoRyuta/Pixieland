@@ -22,3 +22,8 @@
 .subTitle {
     color: rgb(112, 75, 180);
 }
+
+.title {
+    font-size: 5rem;
+    text-align: center;
+}

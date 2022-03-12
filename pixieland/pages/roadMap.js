@@ -8,6 +8,10 @@ export default function Roadmap() {
   return (
     <div className={styles.roadmap}>
 
+      <div className={styles.title}>
+        Roadmap
+      </div>
+
       <div>
         <div className={styles.Heading}>
           <div>
@@ -18,7 +22,7 @@ export default function Roadmap() {
           </div>
         </div>
         <div className={styles.Content}>
-          Phase 1, 10,000 Pixiehouses wil be sold at the price of 0.05 eth. 
+          10,000 Pixiehouses wil be sold at the price of 0.05 eth. 
           <br/>
           Whitelist member will have early access to minting and at 0.04 eth.
         </div>

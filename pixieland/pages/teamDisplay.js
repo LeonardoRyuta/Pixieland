@@ -49,9 +49,9 @@ export default function TeamDisplay(){
                             Flogi
                         </h3>
                         <p className={styles.desc}> 
-                            Artist
+                            Founder
                             <br/>
-                            Smart Contract Dev
+                            Artist
                         </p>
                         <a className={styles.twitterLink} href='https://twitter.com/flogi_eth' target="_blank" rel="noreferrer">
                             <img src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c011b3741a9b3bb28169_Vector%20(8).svg"/>
@@ -59,7 +59,7 @@ export default function TeamDisplay(){
                     </div>
 
                     <div className={styles.teamMember}>
-                        <img onClick={()=>{window.open('https://www.instagram.com/officialkenabdullah/', '_blank')}} src='/pfps/noPFP.png' className={styles.pfp}></img>
+                        <img onClick={()=>{window.open('https://www.instagram.com/officialkenabdullah/', '_blank')}} src='/ken.jpg' className={styles.pfp}></img>
                         <h3 className={styles.Name}>
                             Ken
                         </h3>
@@ -74,16 +74,16 @@ export default function TeamDisplay(){
                     </div>
 
                     <div className={styles.teamMember}>
-                        <img src='/pfps/noPFP.png' className={styles.pfp}></img>
+                        <img onClick={()=>{window.open('https://twitter.com/ephrum?s=11', '_blank')}} src='/caleb.jpg' className={styles.pfp}></img>
                         <h3 className={styles.Name}>
                             Caleb
                         </h3>
                         <p className={styles.desc}> 
-                            Discord Manager 
+                            Discord Manager
                             <br/>
                             
                         </p>
-                        <a className={styles.twitterLink}>
+                        <a className={styles.twitterLink} href="https://twitter.com/ephrum?s=11" target="_blank" rel="noreferrer">
                             <img src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c011b3741a9b3bb28169_Vector%20(8).svg"/>
                         </a>
                     </div>

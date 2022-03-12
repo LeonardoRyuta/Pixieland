@@ -33,6 +33,7 @@ export default function Mint(){
       try {
         if(window.ethereum) {
           const accounts = await window.ethereum.request({method: 'eth_requestAccounts'})
+          console.log(accounts)
           account= accounts[0]
           connected= true
           document.getElementById("accountAddress").innerHTML = account
