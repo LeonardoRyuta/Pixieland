@@ -1,9 +1,17 @@
 import Image from 'next/image'
 import styles from './component.module.css'
+import { useEffect } from 'react'
 
 export default function Footer () {
+
+    useEffect(() => {
+        if (window.location.pathname != "/") {
+          document.getElementById("foot").style.display = "none"
+        } 
+      }, [])
+
     return (
-        <div className={styles.centered}>
+        <div className={styles.centered} id="foot">
             <footer className={styles.footer}>
                 <div className={styles.grid}>
                     <div className={styles.padded}>

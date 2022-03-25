@@ -1,8 +1,9 @@
 html,
 body {
-  background-image: url(../public/landscape.PNG);
-  background-size: contain;
-  background-position: 100%;
+  background-image: url(../public/landscape3.png);
+  background-size:contain;
+  image-rendering: pixelated;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-color: #229df2;
@@ -42,30 +43,39 @@ a {
 
   * {
     scrollbar-width: auto;
-    scrollbar-color: #a414cc #b89bc5;
+    scrollbar-color: #3f80d4 #7199d6;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition: all 0.5s;
   }
 
   *::-webkit-scrollbar {
     width: 2px;
     position: fixed;
-    transition:width 0.5s;
-    -webkit-transition:width 0.5s;
-    -moz-transition: width 0.5s;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition: all 0.5s;
   }
 
-  *::-webkit-scrollbar:hover{
-    /* width: 2px; */
-  }
+  /* *::-webkit-scrollbar:hover{
+    width: 0.5rem;
+  } */
 
   *::-webkit-scrollbar-track {
-    background: #b89bc5 20%;
+    background: #7199d6 20%;
     background: transparent;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition: all 0.5s;
   }
 
   *::-webkit-scrollbar-thumb {
     background-color: gray;
     border-radius: 28px;
-    border: 3px solid #b292b5;
+    border: 3px solid #7199d6;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition: all 0.5s;
   }
 
   button{

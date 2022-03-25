@@ -3,11 +3,12 @@ import Footer from './footer'
 import Menu from './navbar'
 
 export default function Layout({ children }) {
+
   return (
     <>
-      <Menu/>
+      <Menu id="menu"/>
       <main>{children}</main>
-      <Footer/>
+      <Footer id="foot"/>
     </>
   )
 }

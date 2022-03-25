@@ -1,20 +1,40 @@
-.card{
+.body {
+  background-image: url("../public/mintBg.PNG");
+  background-color: #229df2;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position:bottom;
   height: 100vh;
+}
+
+.card{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .mintPart{
+  border: 4px solid white;
+  border-radius: 10px;
+  background-color: #c4b1748f;
   color: black;
   display: flex;
+  flex-direction: column;
+  font-family: "ChronoType";
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 50vh;
+  width: 50%;
+  height: 60%;
+  padding: 5rem;
   z-index: 100;
-  transform: translateZ(-100px);
+  transform: translateZ(-100px);  
+  text-align: center;
+}
+
+.mintPart h1{
+  font-size: 4rem;
+  text-decoration: underline;
 }
 
 .previewSection{
@@ -35,6 +55,7 @@
 }
 
 .housesDisplay1{
+  z-index: -100;
   position: relative;
   margin: 3rem 3rem;
   display: table-column;
@@ -42,6 +63,7 @@
 }
 
 .housesDisplay2{
+  z-index: -100;
   position: relative;
   margin: 3rem 3rem;
   display: table-column;
@@ -98,7 +120,7 @@
 
 .mintContent {
   font-family: "ChronoType";
-  font-size: 1.5rem;
+  font-size: 3rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -114,6 +136,8 @@
   height: 2rem;
   margin: 0 1rem;
   border: none;
+  cursor: pointer;
+  user-select: none;
 }
 
 .tab {
@@ -141,4 +165,30 @@
 
 .hidden {
   display: none;
+}
+
+.account{
+  background-color: #3385947e;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 4px solid white;
+  font-family: 'ChronoType';
+  margin: 10px 0;
+  color: #584d4d;
+  font-size: 1.5rem;
+  transition: 0.15s ease-in-out;
+}
+
+.account:hover{
+  color: #6b6b6b;
+}
+
+.button {
+  border: none;
+  padding: 1rem;
+}
+
+.counter {
+  font-size: 2rem;
+  user-select: none;
 }

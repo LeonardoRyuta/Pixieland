@@ -58,7 +58,7 @@ export default function TeamDisplay(){
                         </a>
                     </div>
 
-                    <div className={styles.teamMember}>
+                    {/* <div className={styles.teamMember}>
                         <img onClick={()=>{window.open('https://www.instagram.com/officialkenabdullah/', '_blank')}} src='/ken.jpg' className={styles.pfp}></img>
                         <h3 className={styles.Name}>
                             Ken
@@ -71,7 +71,7 @@ export default function TeamDisplay(){
                         <a className={styles.twitterLink} href='https://www.instagram.com/officialkenabdullah/' target="_blank" rel="noreferrer">
                             <img className={styles.instaLink} src="/instagram.svg"/>
                         </a>
-                    </div>
+                    </div> */}
 
                     <div className={styles.teamMember}>
                         <img onClick={()=>{window.open('https://twitter.com/ephrum?s=11', '_blank')}} src='/caleb.jpg' className={styles.pfp}></img>

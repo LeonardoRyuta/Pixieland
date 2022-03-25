@@ -69,7 +69,13 @@
   }
 
   .mainNav {
-    margin: 1.5rem 0;
+    /* margin: 1.5rem 0; */
+    /* background-color: #6b6b6b; */
+  }
+
+  .mintNav {
+    position: absolute;
+    background-color: #229df2;
   }
 
   .miniLogo {
@@ -85,13 +91,15 @@
     flex:1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: 10rem;
     align-items: center;
   }
 
   .connectWallet {
-    position: absolute;
-    right: 0;
+    display: flex;
+    /* position: absolute;
+    right: 0; */
   }
 
   .sideLogo {
@@ -104,7 +112,7 @@
     /* position: absolute; */
     transition: transform 0.5s;
     margin:0 1rem;
-    transform: rotateZ(350deg);
+    /* transform: rotateZ(350deg); */
     max-width: 5.5rem;
     cursor: pointer;
   }

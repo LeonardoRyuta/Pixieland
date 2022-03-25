@@ -18,13 +18,17 @@ export default function Roadmap() {
             01
           </div>
           <div className={styles.subTitle}>
-            Pixihouse Sale
+            Prelaunch
           </div>
         </div>
         <div className={styles.Content}>
-          10,000 Pixiehouses wil be sold at the price of 0.05 eth. 
+          Already prior to our launch we are eager to provide value to our community. 
           <br/>
-          Whitelist member will have early access to minting and at 0.04 eth.
+          In order for Pixieland to get an exposure to a variety of other NFT projects, we are giving whitelist spots to their communities. 
+          <br/>
+          Whitelist spots will also be given out to reward members for helping the project grow and prosper our community, 
+          <br/>
+          therefore the whitelist mint price will be lower than the public mint price. 
         </div>
       </div>
 
@@ -34,13 +38,15 @@ export default function Roadmap() {
             02
           </div>
           <div className={styles.subTitle}>
-            Early access game release
+            Mint
           </div>
         </div>
         <div className={styles.Content}>
-          The early access version of the Pixieland game will be released for Pixiehouse holders.
+          When the mint date has occurred, we will first open up the mint gates for our whitelisted people lasting 24 hours. 
           <br/>
-          In the early access version users won&apos;t be able to interact with land yet, however, users will be able to interact with other players.
+          Following the whitelist mint, we will open up the gates for the public, which will also be open for 24 hours. 
+          <br/>
+          If we do not sell out, we will burn the remaining supply and proceed to the next phase. 
         </div>
       </div>
 
@@ -50,14 +56,17 @@ export default function Roadmap() {
             03
           </div>
           <div className={styles.subTitle}>
-            Game release & Land sale
+            Postlaunch
           </div>
         </div>
         <div className={styles.Content}>
-          The final version of the game and land sale will be release simultaneously.
+          Once minting is complete, we will publish the beta version of the Pixieland game for 500 Pixieland holders to test high traffic, solve potential emerging issues and improve for mass adoption. 
           <br/>
-          You will be able to mint land and if you are a Pixihouse holder you will be able to place your
-          house on the land you minted.
+          If everything works as planned, we will open up the game for all Pixieland holders and will be further improved constantly. 
+          <br/>
+          There are also further benefits for Pixielanders. 
+          <br/>
+          Ultimately, we hope that we can be the reason for others to form valuable connections within this space and make long-term friends. 
         </div>
       </div>
 
@@ -67,35 +76,21 @@ export default function Roadmap() {
             04
           </div>
           <div className={styles.subTitle}>
-            Creation giveaway contest
+            Long Term plans
           </div>
         </div>
         <div className={styles.Content}>
-          Using the developer kit, Pixiehouse holders will be able to create virtually anything in their Pixiehouse.
+          We are here for the long-term plans and that&apos;s why we are already thinking about the future of Pixieland.
           <br/>
-          We will hold a contest to see who can make the most impressive creation.
+          As we are a community-driven project we primarily do everything to benefit our holders. 
           <br/>
-          A prize pool will be distributed throughout the winners.
-        </div>
-      </div>
-
-      <div>
-        <div className={styles.Heading}>
-          <div>
-            05
-          </div>
-          <div className={styles.subTitle}>
-            Long term plans
-          </div>
-        </div>
-        <div className={styles.Content}>
-          Pixiland is here to stay!
+          All Pixielanders will get access to staking in the end of Q2 to earn $Pixie tokens. 
           <br/>
-          We will brainstom ideas and plans for the future of Pixiland.
+          As the Pixieland game is the heart of our project we are constantly trying improve and innovate in any way possible. 
           <br/>
-          We will further develop the game and periodically add new features.
+          Planning to airdrop PixieCranes to our biggest supporters to upgrade their houses and simultaneously increase their staking yield and earn other rewards is just one of them. 
           <br/>
-          Pixland is a community driven project, therfore we will be very close to you all and listen to your thoughts!
+          Many more things are coming. Stay tuned! 
         </div>
       </div>
 

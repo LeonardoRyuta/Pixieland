@@ -7,9 +7,9 @@ import FAQ  from './FAQ'
 import TeamDisplay from './teamDisplay'
 import Roadmap from './roadMap'
 import Mint from './mint'
+import Collab from './collab.js'
 
 export default function Home() {
-
   const tabs = [
     ['Radioactive', '0.1', '#7fff00'], 
     ['Ruby', '0.5', '#a90329'], 
@@ -21,14 +21,27 @@ export default function Home() {
   ]
 
   const [currentTab, setTab] = useState(tabs[0])
+  const [butterFlyMove, setMovement] = useState(0)
 
   useEffect(() => {
-    document.addEventListener('scroll', ()=>{
-      inView();
+    document.addEventListener('scroll', (e)=>{
+      inView(e);
     })
+    preRenderImgs()
+  
   }, [])
 
-  const inView = () => {
+  const preRenderImgs = () => {
+    tabs.map((tab, index) => {
+      setTab(tab)
+    })
+    setTab(tabs[0])
+  }
+
+  const inView = (e) => {
+    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    // console.log(scrollTop)
+    setMovement(-(scrollTop/10))
     var counter;
     counter = document.getElementById('About');
     if (counter.getBoundingClientRect().top <= window.innerHeight) {
@@ -52,9 +65,8 @@ export default function Home() {
         <meta name="Pixieland" />
         <link rel="icon" href='/Butterfly.png' />
       </Head>
-      <div className={styles.parent}>
+      <div style={{transform:`translateY(${butterFlyMove}px)`}} className={styles.parent}>
         <div className={styles.flexcenter}>
-          <div className={styles.fade}></div>
           <img className={styles.butterflyLogo} id="butterflyLogo" src='/Butterfly.png'></img>
         </div>
       </div>
@@ -124,15 +136,12 @@ export default function Home() {
         <div className={styles.grid1}>
           <div className={`${styles.card} ${styles.right}`}>
             <p className={styles.paragraph}> 
-              {"Pixieland's first land sale will take place in Genesis city - the core of our metaverse. Users who own land will be able to place their pixie house and access the land editior where they can fully customize their land and use the developer kit. A token will also be made which will be used in the upcoming game."}
+              {"Pixieland is a collection of 10,000 algorithmically generated Pixiehouses NFTs living on the blockchain, created from a combination of over 370 traits varying rarity across different categories. There will be some 1 of 1’s sprinkled in the collection, and you might get lucky and mint one. Holders of a Pixiehouse will be granted access to the Pixieland game. Our vision is to connect likeminded people within the NFT space in a fun way, by providing the gamified Pixieland platform!"}
             </p>
           </div>
           <div className={`${styles.pixelated} ${styles.city}`}>
             <Image src='/city.png' width={500} height={500}></Image>
           </div>
-        </div>
-        <div id="Mint">
-          <Mint/>
         </div>
 
         <div className={styles.grid2} id="Rarities">
@@ -168,15 +177,15 @@ export default function Home() {
             <div className={`${styles.pixelated} ${styles.city} ${styles.traitsBox}`}>
               <div className={styles.trait}>
                 <h4>Bars</h4>
-                <Image src={`/bars/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+                <Image src={`/bars/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
               </div>
               <div className={styles.trait}>
                 <h4>Chimney</h4>
-                <Image src={`/chimney/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+                <Image src={`/chimney/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
               </div>
               <div className={styles.trait}> 
                 <h4>Door</h4>
-                <Image src={`/door/${currentTab[0].toLowerCase()}_closed.png`} width={100} height={100}></Image>
+                <Image src={`/door/${currentTab[0].toLowerCase()}_closed.png`} width={100} height={100} priority={true}></Image>
               </div>
               {/* <div className={styles.trait}>
                 <h4>Doormat</h4>
@@ -184,38 +193,42 @@ export default function Home() {
               </div> */}
               <div className={styles.trait}>
                 <h4>Flower Pots</h4>
-                <Image src={`/flower_pots/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+                <Image src={`/flower_pots/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
               </div>
               <div className={styles.trait}>
                 <h4>Lamps</h4>
-                <Image src={`/outdoor_lamps/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+                <Image src={`/outdoor_lamps/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
               </div>
               <div className={styles.trait}>
                 <h4>Satellite Dish</h4>
-                <Image src={`/satellite_dish/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+                <Image src={`/satellite_dish/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
               </div>
               <div className={styles.trait}>
                 <h4>Solarpanels</h4>
-                <Image src={`/solarpanels/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image>
+                <Image src={`/solarpanels/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
               </div>
               <div className={styles.trait}>
                 <h4>Window</h4>
-                <Image src={`/window_color/${currentTab[0].toLowerCase()}.png`} width={100} height={100}></Image> 
+                <Image src={`/window_color/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image> 
               </div>
             </div>
 
 
           </div>
         </div>
-
-        <div id="Roadmap">
-          <Roadmap/>
+        <div className={styles.townbg}>
+          <div id="Roadmap" className={styles.grid1}>
+            <Roadmap/>
+          </div>
+          <div id="FAQ">
+            <FAQ></FAQ>
+          </div>
+          <div id="Team" className={styles.grid1}>
+            <TeamDisplay/>
+          </div>
         </div>
-        <div id="FAQ">
-          <FAQ></FAQ>
-        </div>
-        <div id="Team" className={styles.grid1}>
-          <TeamDisplay/>
+        <div className={styles.grid1}>
+          <Collab/>
         </div>
       </main>
     </div>
