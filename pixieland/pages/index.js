@@ -51,8 +51,11 @@ export default function Home() {
     }
 
     if (document.getElementById("plane1").getBoundingClientRect().top <= window.innerHeight) {
-      document.getElementById("plane1").style.transform = "translateY(-61rem) translateX(-40rem) scale(3)"
-      document.getElementById("plane2").style.transform = "translateY(-58rem) translateX(36.7rem) scale(3)"
+        document.getElementById("plane1").style.transform = "translateY(-96.5rem) scale(3)"
+        document.getElementById("plane2").style.transform = "translateY(-95rem) scale(3)"
+    } else {
+      document.getElementById("plane1").style.transform = "translateY(-96.5rem)"
+      document.getElementById("plane2").style.transform = "translateY(-95rem)"
     }
   }
 
@@ -221,10 +224,9 @@ export default function Home() {
           </div>
         </div>
 
-        <img src='planemd.png' id="plane1" className={styles.plane} style={{transform:"translateY(-61rem) translateX(-40rem)"}}></img>
-        <img src='planesd.png' id="plane2" className={styles.plane} style={{transform:"translateY(-58rem) translateX(36.7rem)"}}></img>
-
         <div className={styles.townbg}>
+          <img src='planemd.png' id="plane1" className={styles.plane} style={{transform:"translateY(-96.5rem)", left:"6rem"}}></img>
+          <img src='planesd.png' id="plane2" className={styles.plane} style={{transform:"translateY(-95rem)", right:"6rem"}}></img>
           <div id="Roadmap" className={styles.grid1}>
             <Roadmap/>
           </div>
