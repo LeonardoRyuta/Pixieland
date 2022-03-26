@@ -210,7 +210,7 @@ export default function Home() {
               </div>
               <div className={styles.trait}>
                 <h4>Satellite Dish</h4>
-                <Image src={`/satellite_dish/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
+                <Image src={`/satellite_dish/${currentTab[0].toLowerCase()}.png`} width={80} height={100} priority={true}></Image>
               </div>
               <div className={styles.trait}>
                 <h4>Solarpanels</h4>

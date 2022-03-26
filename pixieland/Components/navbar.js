@@ -45,13 +45,13 @@ export default function Menu () {
 
     return(
             <div className={styles.mainNav} id="menu">
-                <Navbar bg='transparent'  variant="light" expand="lg">
+                <Navbar bg='transparent'  variant="light" expand="lg" style={{width:"100vw"}}>
                 <img onClick={()=>{window.location.href = "/"}} className={styles.sideLogo} src="pl_logo_test.png"></img>
                 <Container className={styles.contain} >
                     <Navbar.Toggle className={styles.Navbar} aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className={styles.scrollTabs}>
-                            <Nav >
+                            <Nav style={{alignItems:"center"}}>
                                 {/* <Link href='/'><a className={styles.link}>Home</a></Link> */}
                                 <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>About</a>
                                 {/* <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>Mint</a> */}
