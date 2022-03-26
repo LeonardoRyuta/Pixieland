@@ -506,6 +506,14 @@
   width: 100vw;
 }
 
-.plane{
-  position: absolute;
+@media (min-width: 1024px) {
+  .plane{
+    position: absolute;
+  }  
+}
+
+@media (max-width: 1024px) {
+  .plane{
+    display: hidden;
+  }  
 }
