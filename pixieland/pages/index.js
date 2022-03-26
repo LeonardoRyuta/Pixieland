@@ -49,6 +49,11 @@ export default function Home() {
     } else {
       document.getElementById("scrollUp").style.display = "none"
     }
+
+    if (document.getElementById("plane1").getBoundingClientRect().top <= window.innerHeight) {
+      document.getElementById("plane1").style.transform = "translateY(-61rem) translateX(-40rem) scale(3)"
+      document.getElementById("plane2").style.transform = "translateY(-58rem) translateX(36.7rem) scale(3)"
+    }
   }
 
   const scrollUp = () => {
@@ -68,9 +73,10 @@ export default function Home() {
       <div style={{transform:`translateY(${butterFlyMove}px)`}} className={styles.parent}>
         <div className={styles.flexcenter}>
           <img className={styles.butterflyLogo} id="butterflyLogo" src='/Butterfly.png'></img>
+          
         </div>
       </div>
-      <main className={styles.main1}>
+      <main className={styles.main1}> 
         <div style={{display:"none"}} id="scrollUp" className={styles.scrollUp} onClick={()=>{scrollUp()}}>
         </div>
         <div className={styles.parent}>
@@ -212,10 +218,12 @@ export default function Home() {
                 <Image src={`/window_color/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image> 
               </div>
             </div>
-
-
           </div>
         </div>
+
+        <img src='planemd.png' id="plane1" className={styles.plane} style={{transform:"translateY(-61rem) translateX(-40rem)"}}></img>
+        <img src='planesd.png' id="plane2" className={styles.plane} style={{transform:"translateY(-58rem) translateX(36.7rem)"}}></img>
+
         <div className={styles.townbg}>
           <div id="Roadmap" className={styles.grid1}>
             <Roadmap/>

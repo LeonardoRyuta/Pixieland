@@ -505,3 +505,7 @@
   /* background-color: #229df2; */
   width: 100vw;
 }
+
+.plane{
+  position: absolute;
+}

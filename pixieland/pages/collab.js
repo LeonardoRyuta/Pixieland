@@ -44,8 +44,8 @@ export default function Collab() {
             //console.log(formContent)
             var msgObj = {
                 Name : formContent[0],
-                Email : formContent[1],
-                Project : formContent[2],
+                Email : formContent[2],
+                Project : formContent[1],
                 Subject : formContent[3],
                 Message : formContent[4]
             }
@@ -78,31 +78,35 @@ export default function Collab() {
 
         <h2>Partnerships & Collabs</h2>
         <div className={styles.content}>
-            <div style={{textAlign:"center", fontSize:"1.5rem"}}>
-                If you are interested in a collaboration with Pixiland, please email us at team@pixielandnft.com 
-                <br/>
+            <div className={styles.infoText}>
+                If you are interested in a collaboration with Pixieland, please email us at team@pixielandnft.com 
+            </div>
+            <div className={styles.infoText}>
                 or 
-                <br/>
+            </div>
+            <div className={styles.infoText}>
                 fill and submit this form (* = required field):
             </div>
-            <div className={styles.part1}>
-                <div className={styles.inputs}>
-                    <div>Name*</div>
-                    <input id="name" className={styles.textInputs}></input>
+            <div style={{display:"flex", flexDirection:"row", justifyContent:"center"}}>
+                <div className={styles.part1}>
+                    <div className={styles.inputs}>
+                        <div>Name*</div>
+                        <input id="name" className={styles.textInputs}></input>
+                    </div>
+                    <div className={styles.inputs}>
+                        <div>Project</div>
+                        <input className={styles.textInputs}></input>
+                    </div>
                 </div>
-                <div className={styles.inputs}>
-                    <div>Email*</div>
-                    <input id="email" className={styles.textInputs}></input>
-                </div>
-            </div>
-            <div className={styles.part1}>
-                <div className={styles.inputs}>
-                    <div>Project Name</div>
-                    <input className={styles.textInputs}></input>
-                </div>
-                <div className={styles.inputs}>
-                    <div>Subject</div>
-                    <input className={styles.textInputs}></input>
+                <div className={styles.part1}>
+                    <div className={styles.inputs}>
+                        <div>Email*</div>
+                        <input id="email" className={styles.textInputs}></input>
+                    </div>
+                    <div className={styles.inputs}>
+                        <div>Subject</div>
+                        <input className={styles.textInputs}></input>
+                    </div>
                 </div>
             </div>
             <div className={styles.part1}>

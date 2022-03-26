@@ -42,7 +42,7 @@ export default function Roadmap() {
           </div>
         </div>
         <div className={styles.Content}>
-          When the mint date has occurred, we will first open up the mint gates for our whitelisted people lasting 24 hours. 
+          On mint day, we will first open up the mint gates for our whitelisted people lasting 24 hours. 
           <br/>
           Following the whitelist mint, we will open up the gates for the public, which will also be open for 24 hours. 
           <br/>
