@@ -194,7 +194,7 @@ export default function Home() {
               </div>
               <div className={styles.trait}> 
                 <h4>Door</h4>
-                <Image src={`/door/${currentTab[0].toLowerCase()}_closed.png`} width={70} height={100} priority={true}></Image>
+                <Image src={`/door/${currentTab[0].toLowerCase()}_closed.png`} width={60} height={100} priority={true}></Image>
               </div>
               {/* <div className={styles.trait}>
                 <h4>Doormat</h4>
