@@ -70,9 +70,11 @@ export default function Home() {
     <div>
       <Head> 
         <title>Pixieland | Home</title>
-        <meta name="Pixieland" />
+        <meta name="Pixieland" 
+        content="Pixieland Website where you can find more information about us and our project."/>
         <link rel="icon" href='/Butterfly.png' />
       </Head>
+
       <div style={{transform:`translateY(${butterFlyMove}px)`}} className={styles.parent}>
         <div className={styles.flexcenter}>
           <img className={styles.butterflyLogo} id="butterflyLogo" src='/Butterfly.png'></img>
