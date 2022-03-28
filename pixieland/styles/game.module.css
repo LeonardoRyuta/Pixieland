@@ -1,8 +1,9 @@
 .main{
-    height: 63vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #229df2;
 }
 
 @media (max-width: 400px){
@@ -101,4 +102,13 @@
     100%{
         opacity: 1;
     }
+}
+
+.underContruction{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "ChronoType";
+    font-size: 5rem;
 }

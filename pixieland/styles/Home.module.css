@@ -465,6 +465,10 @@
   animation: fadeIn-bottom 1s ease-in-out;
 }
 
+.butterflyLogo:hover {
+  transform: scale(1.2);
+}
+
 .scrollUp {
   content: url("https://cdn.iconscout.com/icon/free/png-256/keyboard-arrow-up-1780933-1517436.png");
   position: fixed;

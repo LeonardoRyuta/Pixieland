@@ -188,15 +188,15 @@ export default function Home() {
             <div className={`${styles.pixelated} ${styles.city} ${styles.traitsBox}`}>
               <div className={styles.trait}>
                 <h4>Bars</h4>
-                <Image src={`/bars/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
+                <Image src={`/bars/${currentTab[0].toLowerCase()}.png`} width={256} height={229} priority={true}></Image>
               </div>
               <div className={styles.trait}>
                 <h4>Chimney</h4>
-                <Image src={`/chimney/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
+                <Image src={`/chimney/${currentTab[0].toLowerCase()}.png`} width={233} height={244} priority={true}></Image>
               </div>
               <div className={styles.trait}> 
                 <h4>Door</h4>
-                <Image src={`/door/${currentTab[0].toLowerCase()}_closed.png`} width={60} height={100} priority={true}></Image>
+                <Image src={`/door/${currentTab[0].toLowerCase()}_closed.png`} width={60} height={104} priority={true}></Image>
               </div>
               {/* <div className={styles.trait}>
                 <h4>Doormat</h4>
@@ -204,7 +204,7 @@ export default function Home() {
               </div> */}
               <div className={styles.trait}>
                 <h4>Flower Pots</h4>
-                <Image src={`/flower_pots/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
+                <Image src={`/flower_pots/${currentTab[0].toLowerCase()}.png`} width={256} height={156} priority={true}></Image>
               </div>
               <div className={styles.trait}>
                 <h4>Lamps</h4>
@@ -216,11 +216,11 @@ export default function Home() {
               </div>
               <div className={styles.trait}>
                 <h4>Solarpanels</h4>
-                <Image src={`/solarpanels/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image>
+                <Image src={`/solarpanels/${currentTab[0].toLowerCase()}.png`} width={256} height={226} priority={true}></Image>
               </div>
               <div className={styles.trait}>
                 <h4>Window</h4>
-                <Image src={`/window_color/${currentTab[0].toLowerCase()}.png`} width={100} height={100} priority={true}></Image> 
+                <Image src={`/window_color/${currentTab[0].toLowerCase()}.png`} width={256} height={212} priority={true}></Image> 
               </div>
             </div>
           </div>

@@ -27,8 +27,8 @@
   width: 50%;
   height: 60%;
   padding: 5rem;
-  z-index: 100;
-  transform: translateZ(-100px);  
+  /* z-index: 0;
+  transform: translateZ(-100px);   */
   text-align: center;
 }
 

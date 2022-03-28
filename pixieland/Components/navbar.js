@@ -47,11 +47,11 @@ export default function Menu () {
             <div className={styles.mainNav} id="menu">
                 <Navbar bg='transparent'  variant="light" expand="lg" style={{width:"100vw"}}>
                 <img onClick={()=>{window.location.href = "/"}} className={styles.sideLogo} src="pl_logo_test.png"></img>
-                <Container className={styles.contain} >
-                    <Navbar.Toggle className={styles.Navbar} aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className={styles.scrollTabs}>
-                            <Nav style={{alignItems:"center"}}>
+                <Navbar.Toggle className={styles.Navbar} aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav" style={{width:"100%"}}>
+                    <Container className={styles.contain}>
+                        {/* <Nav className={styles.scrollTabs} style={{width:"100%"}}> */}
+                        <Nav style={{alignItems:"center", textAlign:"center", width:"100%", display:"flex", justifyContent:"center"}}>
                                 {/* <Link href='/'><a className={styles.link}>Home</a></Link> */}
                                 <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>About</a>
                                 {/* <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>Mint</a> */}
@@ -63,16 +63,19 @@ export default function Menu () {
                                 <Link href='/game'><a className={styles.link}>Game</a></Link> */}
                                 {/* <Link href='/whitepaper'><a className={styles.link}>Whitepaper</a></Link> */}
                             </Nav>
-                            <Nav className={styles.connectWallet}>
+                        {/* </Nav> */}
+                    </Container>
+                    <Container style={{width:"min-content"}}>
+                        <Nav className={styles.connectWallet} style={{textAlign:"right"}}>
                                 <a href="/mint" className={styles.link}>Mint</a>
+                                <a href="/game" className={styles.link}>Game</a>
                                 {/* <a className={`${styles.link} ${styles.account}`}><Account triedToEagerConnect={triedToEagerConnect} /></a> */}
                                 <a className={`${styles.link}`} href='https://twitter.com/PixieLandNFT' target="_blank" rel="noreferrer">
                                     <img className={styles.twitterLogo} src={'/twitter.png'} width={40}/>
                                 </a>
                             </Nav>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
+                    </Container>
+                </Navbar.Collapse>
                 </Navbar>
             </div>
     )
