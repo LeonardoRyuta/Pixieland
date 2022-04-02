@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/whitepaper.module.css'
 
 export default function Whitepaper() {
 
@@ -11,9 +11,8 @@ export default function Whitepaper() {
         <link rel="icon" href='/Butterfly.jpg' />
         </Head>
         <div>
-          <main className={styles.main3}>
-            <h1 className={styles.title} style={{paddingTop:"20px"}}>Whitepaper</h1>
-            <p style={{textAlign:"left"}}>Whitepaper text</p>
+          <main className={styles.main}>
+            
           </main>
         </div>  
       </div>

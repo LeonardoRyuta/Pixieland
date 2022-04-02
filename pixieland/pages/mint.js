@@ -85,6 +85,13 @@ export default function Mint(){
 
   return (
     <div className={styles.body}>
+      <Head> 
+        <title>Pixieland | Mint</title>
+        <meta name="Pixieland" 
+        content="Pixieland's minting page"/>
+        <link rel="icon" href='/Butterfly.png' />
+      </Head>
+
         <div id="mintmain" className={styles.card}>
           {
             isOnSale ?

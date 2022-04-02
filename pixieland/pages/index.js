@@ -75,19 +75,19 @@ export default function Home() {
         <link rel="icon" href='/Butterfly.png' />
       </Head>
 
-      <div style={{transform:`translateY(${butterFlyMove}px)`}} className={styles.parent}>
-        <div className={styles.flexcenter}>
-          <img className={styles.butterflyLogo} id="butterflyLogo" src='/Butterfly.png'></img>
-          
-        </div>
-      </div>
+
       <main className={styles.main1}> 
         <div style={{display:"none"}} id="scrollUp" className={styles.scrollUp} onClick={()=>{scrollUp()}}>
         </div>
-        <div className={styles.parent}>
+        <div className={styles.parent} style={{display:"flex", flexDirection:"column"}}>
           <div className={styles.fade}></div>
           <img src='/clouds.png' className={styles.clouds}/>
           <img className={styles.logo}/>
+          <div style={{transform:`translateY(${butterFlyMove}px)`}} className={styles.parent}>
+            <div className={styles.flexcenter}>
+              <img className={styles.butterflyLogo} id="butterflyLogo" src='/Butterfly.png'></img>
+            </div>
+          </div>
         </div>
       </main>
       <main className={styles.centered}>
