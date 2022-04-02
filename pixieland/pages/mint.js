@@ -14,8 +14,6 @@ export default function Mint(){
   const delay = ms => new Promise(res => setTimeout(res, ms))
 
   const { account } = useWeb3React();
-  var connected= false
-  var amountToBuy = 1
 
   const [amountOfHouses, setAmount] = useState(1);
   const [isOnSale, setSaleState] = useState(false)
@@ -25,25 +23,6 @@ export default function Mint(){
   //   //   const house = await this.contract.mintHouse({value: parseEther("0.05"), gasPrice: 100000000000, gasLimit: 100000})
   //   //   console.log(house)
   //   // }
-
-  useEffect(async () => {
-    // console.log(account)
-  }, [account])
-
-  useEffect(async () => {
-  }, [amountOfHouses])
-
-  const addHouse = () => {
-    if (amountOfHouses != 15) {
-      setAmount(amountOfHouses + 1);
-    }
-  }
-
-  const removeHouse = () => {
-    if (amountOfHouses != 1) {
-      setAmount(amountOfHouses - 1);
-    }
-  }
 
   const countdownTimeStart = () => {
 
@@ -92,7 +71,7 @@ export default function Mint(){
         <link rel="icon" href='/Butterfly.png' />
       </Head>
 
-        <div id="mintmain" className={styles.card}>
+        <div className={styles.card}>
           {
             isOnSale ?
             <div  className={styles.mintPart}>
@@ -100,68 +79,48 @@ export default function Mint(){
                 Pre-sale
               </h1>
               <div className={styles.mintContent}>
-                {/* {
-                  account ? 
-                  <h1>
-                    Pre-sale
-                  </h1>
-                  :
-                  null
-                } */}
-                {
-                  account ? 
-                  <div>
-                    ?????/10,000
-                  </div>
-                  :
-                  null
-                }
                 {
                   account ?
-                  <a className={`${styles.account}`} onChange={()=>{console.log(account)}}>
-                    <Account triedToEagerConnect={triedToEagerConnect} />         
-                  </a>  
+                    <>
+                      <div>
+                        ?????/10,000
+                      </div>
+                      <a className={`${styles.account}`}>
+                        <Account triedToEagerConnect={triedToEagerConnect} />         
+                      </a>
+
+                      <div style={{fontSize:"2rem"}}>
+                        Price TBA
+                      </div>
+
+                      <div className={`${styles.flexCenter} ${styles.counter}`}>
+                        <div onClick={() => { amountOfHouses > 1 ? setAmount(amountOfHouses - 1) : null}} className={styles.addminusButton}>
+                          -
+                        </div>
+                        <div id="amountToBuy">
+                          {amountOfHouses}
+                        </div>
+                        <div onClick={() => { amountOfHouses < 15 ? setAmount(amountOfHouses + 1) : null}} className={styles.addminusButton}>
+                          +
+                        </div>
+                      </div>
+                      <button id="mintButton" className={button.pixel2}>
+                        Mint {amountOfHouses} {amountOfHouses > 1 ? "Houses" : "House"}
+                      </button>
+                    </>
                   :
-                  <a onChange={()=>{console.log(account)}}>
+                  <a>
                     <Account triedToEagerConnect={triedToEagerConnect} />         
                   </a>  
                 }
-                
-                {
-                  account ? 
-                  <>
-                  <div style={{fontSize:"2rem"}}>
-                    tba eth price
-                  </div>
-
-                  <div className={`${styles.flexCenter} ${styles.counter}`}>
-                    <div onClick={removeHouse} className={styles.addminusButton}>
-                      -
-                    </div>
-                    <div id="amountToBuy">
-                      {amountOfHouses}
-                    </div>
-                    <div onClick={addHouse} className={styles.addminusButton}>
-                      +
-                    </div>
-                  </div>
-                  <button id="mintButton" className={button.pixel2}>
-                    Mint {amountOfHouses} {amountOfHouses > 1 ? "Houses" : "House"}
-                  </button>
-                  </>
-                  :
-                  null
-                }
-
               </div>
 
             </div>
             :
             <div className={styles.mintPart}>
               <h1 style={{textDecoration:"none"}}>
-                Minting tba
+                Minting TBA
               </h1>
-              <br/>
               <div id="countdown">
 
               </div>

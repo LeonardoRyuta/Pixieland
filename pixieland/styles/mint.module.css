@@ -15,9 +15,9 @@
 }
 
 .mintPart{
-  border: 4px solid white;
+  /* border: 4px solid white;
   border-radius: 10px;
-  background-color: #c4b1748f;
+  background-color: #c4b1748f; */
   color: black;
   display: flex;
   flex-direction: column;

@@ -22,13 +22,13 @@ export default function Home() {
 
   const [currentTab, setTab] = useState(tabs[0])
   const [butterFlyMove, setMovement] = useState(0)
+  const [account, setAccount] = useState("");
 
   useEffect(() => {
     document.addEventListener('scroll', (e)=>{
       inView(e);
     })
     preRenderImgs()
-  
   }, [])
 
   const preRenderImgs = () => {
