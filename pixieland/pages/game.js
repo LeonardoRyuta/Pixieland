@@ -8,7 +8,6 @@ export default function Game() {
 
   const underContruction = async () => {
     for (var x=0; x<1; x++) {
-      console.log("gew")
       document.getElementById("mainText").innerText = "Under Contruction"
       await delay(500)
       document.getElementById("mainText").innerText = "Under Contruction."
