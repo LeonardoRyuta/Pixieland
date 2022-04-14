@@ -44,6 +44,55 @@
   z-index: 100;
 }
 
+.blocks{
+  display: flex;
+  /* margin: 1rem; */
+  padding: 1.5rem 0;
+  text-align: left;
+  color: rgb(124, 124, 124);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.15s ease;
+  font-size: 1.7rem;
+  font-family: "ChronoType";
+  z-index: 100;
+}
+
+.miniBlock{
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  width: 20rem;
+  border: 2px solid #1d251c;
+  border-radius: 20px;
+  margin: 0 1rem;
+  background-color: #32412f;
+}
+
+.blockSubTitle{
+  height: 50%;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+  color:rgb(146, 199, 143);
+}
+
+.blockContent{
+  text-align: center;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  color:rgb(127, 158, 125);
+  font-size: 1.5rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.miniBlock h2{
+  /* padding: 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .zindex100{
   z-index: 200;
 }
@@ -138,11 +187,13 @@
   transition: all 0.5s;
   width: 145px;
   image-rendering:pixelated;
+  box-shadow: 0px 5px 10px 0.1px black;
 }
 
 .trait:hover {
   z-index: 100;
-  transform: scale(1.5);
+  transform: scale(1.1);
+  box-shadow: 0px 6px 20px 0.3px black;
 }
 
 .chronoType {
@@ -325,7 +376,7 @@
   margin: 1rem 0;
   padding: 1rem 1rem;
   border-radius: 10px;
-  border: 4px solid white;  
+  border: 4px solid rgb(173, 156, 100);  
   width: fit-content;
 }
 
@@ -340,7 +391,7 @@
   margin: 1rem 0;
   padding: 1rem 1rem;
   border-radius: 10px;
-  border: 4px solid white;  
+  border: 4px solid rgb(173, 156, 100);    
 }
 
 .smallGrid {
@@ -440,14 +491,14 @@
 }
 
 .subTitle{
-  color:rgb(0, 0, 0);
+  color:rgb(23, 71, 21);
   font-size: 5rem;
   margin: 0%;
 }
 
 .paragraph{
   /* color:rgb(91, 80, 165); */
-  color:rgb(0, 0, 0);
+  color:rgb(75, 107, 74);
   font-size: 1.5rem;
   padding-top: 10px;
 }
@@ -478,7 +529,7 @@
   margin: 1.5rem;
   height: 5rem;
   width: 5rem;
-  background-color: rgb(16, 223, 171);
+  background-color: rgb(69, 183, 154);
   border-radius: 50%;
   z-index: 100;
   transition: margin-bottom 0.1s;
@@ -519,6 +570,7 @@
 @media (min-width: 1024px) {
   .plane{
     position: absolute;
+    transition: all 1s;
   }  
 }
 

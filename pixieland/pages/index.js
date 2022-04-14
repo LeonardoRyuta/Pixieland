@@ -31,6 +31,8 @@ export default function Home() {
     preRenderImgs()
   }, [])
 
+
+
   const preRenderImgs = () => {
     tabs.map((tab, index) => {
       setTab(tab)
@@ -51,8 +53,8 @@ export default function Home() {
     }
 
     if (document.getElementById("plane1").getBoundingClientRect().top <= window.innerHeight) {
-        document.getElementById("plane1").style.transform = "translateY(-96.5rem) scale(3)"
-        document.getElementById("plane2").style.transform = "translateY(-95rem) scale(3)"
+        document.getElementById("plane1").style.transform = "translateY(-96.5rem) scale(5)"
+        document.getElementById("plane2").style.transform = "translateY(-95rem) scale(5)"
     } else {
       document.getElementById("plane1").style.transform = "translateY(-96.5rem)"
       document.getElementById("plane2").style.transform = "translateY(-95rem)"
@@ -131,13 +133,13 @@ export default function Home() {
               </div>
             </div>
           <div id="About" className={`${styles.card} ${styles.right}`}>
-            <p className={styles.paragraph}>
+            <p className={styles.paragraph} style={{marginBottom:"0", color:"black"}}>
               Mint and create with
             </p>
-            <h1 className={styles.subTitle}>
-              Pixiehouses  
+            <h1 className={styles.subTitle} style={{color:"black"}}>
+              PixieHouses  
             </h1> 
-            <p className={styles.paragraph}> 
+            <p className={styles.paragraph} style={{color:"black"}}> 
               10000 Pixiehouses sale. After phase 1 Pixieland houses will allow
               owners to display their NFTs and create their own space using our 
               developer kit.
@@ -152,6 +154,29 @@ export default function Home() {
           </div>
           <div className={`${styles.pixelated} ${styles.city}`}>
             <Image src='/city.png' width={500} height={500}></Image>
+          </div>
+        </div>
+
+        <div className={styles.grid1}>
+          <div className={`${styles.blocks}`}>
+            <div className={styles.miniBlock}> 
+              <h2 className={styles.blockSubTitle}>Airdrop</h2>
+              <div className={styles.blockContent}>
+                For every Pixiehouse minted you will get 1 land airdropped to your wallet.
+              </div>
+            </div>
+            <div className={styles.miniBlock}> 
+              <h2 className={styles.blockSubTitle}>Community</h2>
+              <div className={styles.blockContent}>
+                We aim to create a virtual neighborhood and bring our community closer together.
+              </div>
+            </div>
+            <div className={styles.miniBlock}> 
+              <h2 className={styles.blockSubTitle}>Monetize</h2>
+              <div className={styles.blockContent}>
+                Monetize your creations and get $Pixie as a reward.
+              </div>
+            </div>
           </div>
         </div>
 

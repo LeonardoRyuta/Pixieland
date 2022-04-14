@@ -31,7 +31,7 @@ export default function FAQ()  {
                         </div>
                         <div className={`${styles.answer}`} >
                             <div className={`${styles.answerContent} ${styles.richtext}`}>
-                                There will be a total of 10,000 Pixiehouses available.
+                                There will be a total of 10,000 Pixiehouses available. We will keep a 10k supply so that everyone gets a chance to get one or more houses for collection and/or staking purposes.
                                 Mint price is yet to be determined. Updates will be posted on Twitter! 
 
                             </div>
