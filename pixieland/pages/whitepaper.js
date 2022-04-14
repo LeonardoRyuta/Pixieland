@@ -6,10 +6,10 @@ export default function Whitepaper() {
 
   const delay = ms => new Promise(res => setTimeout(res, ms))
 
-  useEffect(() => {
+  useEffect(async () => {
     const notionDocId = "21de34e9a15e4dbc8937827c70dd4fa4#835590ebebfa40d9ac4edc88b481d3b6"
 
-    fetch("https://potion-api.now.sh/html?id=" + notionDocId)
+    await fetch("https://potion-api.now.sh/html?id=" + notionDocId)
       .then(res => res.text())
       .then(text => {
         const main = document.querySelector("main")
