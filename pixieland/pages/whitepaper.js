@@ -8,12 +8,12 @@ export default function Whitepaper() {
 
   useEffect(() => {
 
-    const notionDocId = "21de34e9a15e4dbc8937827c70dd4fa4#835590ebebfa40d9ac4edc88b481d3b6"
+    const notionDocId = "21de34e9a15e4dbc8937827c70dd4fa4"
 
-    async () => {
-      await fetch("https://potion-api.now.sh/html?id=" + notionDocId)
+    fetch("https://potion-api.now.sh/html?id=" + notionDocId)
       .then(res => res.text())
       .then(text => {
+        console.log(text)
         const main = document.querySelector("main")
         main.innerHTML = text
         main.className = `${styles.main}`
@@ -23,7 +23,7 @@ export default function Whitepaper() {
         main.children[25].style.display = "flex"
         main.children[25].children[0].style.height = "3rem"
       })
-    }
+  
 
   }, [])
 
@@ -35,7 +35,7 @@ export default function Whitepaper() {
         <link rel="icon" href='/Butterfly.jpg' />
         </Head>
         <div>
-      <main className={`${styles.main}`} id="main">
+      <main className={`${styles.cover}`} id="main">
       </main>
       </div>  
       </div>
