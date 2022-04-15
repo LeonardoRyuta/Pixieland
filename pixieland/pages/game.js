@@ -22,7 +22,7 @@ export default function Game() {
 
   useEffect(() => {
     underContruction()
-  }, [])
+  }, [underContruction])
 
     return (
       <div>

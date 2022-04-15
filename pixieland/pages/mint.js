@@ -55,9 +55,9 @@ export default function Mint(){
     }, 1000);
   }
 
-  useEffect(async () => {
-    // countdownTimeStart()
-  }, [])
+  // useEffect(() => {
+  //   // countdownTimeStart()
+  // }, [])
 
   const triedToEagerConnect = useEagerConnect();
 

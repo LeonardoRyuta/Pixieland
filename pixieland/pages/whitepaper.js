@@ -6,10 +6,12 @@ export default function Whitepaper() {
 
   const delay = ms => new Promise(res => setTimeout(res, ms))
 
-  useEffect(async () => {
+  useEffect(() => {
+
     const notionDocId = "21de34e9a15e4dbc8937827c70dd4fa4#835590ebebfa40d9ac4edc88b481d3b6"
 
-    await fetch("https://potion-api.now.sh/html?id=" + notionDocId)
+    async () => {
+      await fetch("https://potion-api.now.sh/html?id=" + notionDocId)
       .then(res => res.text())
       .then(text => {
         const main = document.querySelector("main")
@@ -20,7 +22,9 @@ export default function Whitepaper() {
         }
         main.children[25].style.display = "flex"
         main.children[25].children[0].style.height = "3rem"
-    })
+      })
+    }
+
   }, [])
 
     return (
