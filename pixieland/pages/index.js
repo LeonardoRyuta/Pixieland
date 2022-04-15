@@ -174,7 +174,13 @@ export default function Home() {
             <div className={styles.miniBlock}> 
               <h2 className={styles.blockSubTitle}>Monetize</h2>
               <div className={styles.blockContent}>
-                Monetize your creations and get $Pixie as a reward.
+                Monetize your creations and earn $Pixie as a reward.
+              </div>
+            </div>
+            <div className={styles.miniBlock}> 
+              <h2 className={styles.blockSubTitle}>Stake</h2>
+              <div className={styles.blockContent}>
+                Stake your PixieHouse and recieve $Pixie periodically!
               </div>
             </div>
           </div>
@@ -182,7 +188,7 @@ export default function Home() {
 
         <div className={styles.grid2} id="Rarities">
           <div className={`${styles.card} ${styles.right}`}>
-            <h1 className={styles.subtitle}>
+            <h1 className={styles.subTitle}>
               Rarities
             </h1>
             <div>

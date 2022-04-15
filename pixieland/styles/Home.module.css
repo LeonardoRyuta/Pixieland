@@ -486,12 +486,11 @@
     display: flex;
     flex-direction: column;
     padding: 6rem 7rem;
-  
   }
 }
 
 .subTitle{
-  color:rgb(23, 71, 21);
+  color:rgb(72, 66, 66);
   font-size: 5rem;
   margin: 0%;
 }
