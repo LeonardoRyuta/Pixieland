@@ -8,7 +8,6 @@ import useEagerConnect from "../web3/useEagerConnect";
 import useContract from '../web3/useContract'
 import { Component, useEffect, useState } from 'react'
 import abi from "../web3/houses.json";
-import dist from '@discordjs/collection';
 
 export default function Mint(){
   const delay = ms => new Promise(res => setTimeout(res, ms))
