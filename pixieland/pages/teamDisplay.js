@@ -20,7 +20,7 @@ export default function TeamDisplay(){
                 <div className={styles.teamPart}>
                     {
                         teamMembs.map((member, index) => (
-                            <div className={styles.teamMember}>
+                            <div key={index} className={styles.teamMember}>
                                 <img onClick={()=>{window.open(member[3], '_blank')}} src={member[4]} className={styles.pfp}></img>
                                 <h3 className={styles.Name}>
                                     {member[0]}
