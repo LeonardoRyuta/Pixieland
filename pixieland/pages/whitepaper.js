@@ -13,16 +13,38 @@ export default function Whitepaper() {
     fetch("https://potion-api.now.sh/html?id=" + notionDocId)
       .then(res => res.text())
       .then(text => {
-        console.log(text)
         const main = document.querySelector("main")
         main.innerHTML = text
         main.className = `${styles.main}`
         for (var x=0;x<6; x++){
           main.children[x].style.display = "none"
         }
-        main.children[25].style.display = "flex"
-        main.children[25].children[0].style.height = "3rem"
-      })
+
+        const terrainDiv = document.createElement("div")
+        const imgTerrain = document.createElement("img")
+        imgTerrain.src = "/terrains.png"
+        imgTerrain.className = `${styles.imageSize}`
+        terrainDiv.className = `${styles.DIV}`
+        terrainDiv.append(main.children[21])
+        terrainDiv.append(imgTerrain)
+        main.children[20].append(terrainDiv)
+        // main.children[21].append(imgTerrain)
+
+        const nineHousesDiv = document.createElement("div")
+        const nineHouseDisplay = document.createElement("img")
+        nineHouseDisplay.src = "/ninehouseDis.png"
+        nineHouseDisplay.className = `${styles.imageSize}`
+        nineHousesDiv.className = `${styles.DIV}`
+        nineHousesDiv.append(main.children[18])
+        nineHousesDiv.append(nineHouseDisplay)
+        nineHousesDiv.append(main.children[18])
+        main.children[17].append(nineHousesDiv)
+
+        console.log(main.children)
+
+        main.children[22].style.display = "flex"
+        main.children[22].children[0].style.height = "3rem"
+    })
   
 
   }, [])
