@@ -46,8 +46,10 @@
 
 .blocks{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   /* margin: 1rem; */
-  padding: 1.5rem 0;
+  /* padding: 1.5rem 0; */
   text-align: left;
   color: rgb(124, 124, 124);
   text-decoration: none;
@@ -55,17 +57,16 @@
   transition: 0.15s ease;
   font-size: 1.7rem;
   font-family: "ChronoType";
-  z-index: 100;
 }
 
 .miniBlock{
   display: flex;
   flex-direction: column;
   height: 20rem;
-  width: 20rem;
+  max-width: 20rem;
   border: 2px solid #1d251c;
   border-radius: 20px;
-  margin: 0 1rem;
+  margin: 1rem;
   background-color: #32412f;
 }
 
@@ -371,13 +372,13 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  max-width: 1600px;
+  max-width: 100%;
   background-color: #d6c17ebe;
   margin: 1rem 0;
   padding: 1rem 1rem;
   border-radius: 10px;
   border: 4px solid rgb(173, 156, 100);  
-  width: fit-content;
+  width:fit-content;
 }
 
 .grid2 {
