@@ -515,6 +515,7 @@
   max-height: 30vh;  
   max-width: 30vh;  
   animation: fadeIn-bottom 1s ease-in-out;
+  transition: all 0.5s;
 }
 
 .butterflyLogo:hover {

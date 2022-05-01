@@ -59,7 +59,7 @@ export default function Menu () {
                                 <a onClick={(e)=>{scrollToTopOfElement(e)}} className={styles.link}>Roadmap</a>
                                 <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>FAQ</a>
                                 <a onClick={(e)=>{scrollToElement(e)}} className={styles.link}>Team</a>
-                                <a className={styles.separator}></a>
+                                <p className={styles.separator}></p>
                                 {/* <Link href='/map'><a className={styles.link}>Map</a></Link>
                                 <Link href='/game'><a className={styles.link}>Game</a></Link> */}
                                 <Link href='/whitepaper'><a className={styles.link}>Whitepaper</a></Link>

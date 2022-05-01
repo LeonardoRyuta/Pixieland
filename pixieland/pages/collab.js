@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/collab.module.css'
-import socketClient from "socket.io-client";
 import { useEffect, useState } from 'react';
 
 export default function Collab() {
@@ -9,11 +8,6 @@ export default function Collab() {
     const [Incomplete, setShow] = useState(0);
     const [complete, setComplete] = useState(0);
 
-    const socket = socketClient(`wss://pixieland-bot.leonardoryuta05.repl.co/`);
-
-    const sendMessage = (message, callback) => {
-        socket.send(message)
-    };
 
     useEffect(() => {
         
@@ -42,15 +36,21 @@ export default function Collab() {
             formContent.push(document.getElementById("message").value)
             document.getElementById("message").value = ''
             //console.log(formContent)
-            var msgObj = {
-                Name : formContent[0],
-                Email : formContent[2],
-                Project : formContent[1],
-                Subject : formContent[3],
-                Message : formContent[4]
-            }
+            const result = await fetch("https://pixieland-bot.leonardoryuta05.repl.co/project", {
+                method: "POST",
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name : formContent[0],
+                    email : formContent[2],
+                    project : formContent[1],
+                    subject : formContent[3],
+                    message : formContent[4]
+                })
+            })
             //console.log(msgObj)
-            socket.emit('message', msgObj)
             setComplete(complete + 1)
             await delay(5000)
             setComplete(complete = 2)

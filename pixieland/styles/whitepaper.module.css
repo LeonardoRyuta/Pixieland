@@ -18,6 +18,9 @@
 
 .cover{
     background-color: #229df2;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:bottom;
     height: 100vh;
 }
 

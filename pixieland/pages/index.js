@@ -263,7 +263,7 @@ export default function Home() {
           <div id="Roadmap" className={styles.grid1}>
             <Roadmap/>
           </div>
-          <div id="FAQ">
+          <div id="FAQ" className={styles.grid1}>
             <FAQ></FAQ>
           </div>
           <div id="Team" className={styles.grid1}>
