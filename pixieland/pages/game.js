@@ -8,13 +8,13 @@ export default function Game() {
 
   const underContruction = async () => {
     for (var x=0; x<1; x++) {
-      document.getElementById("mainText").innerText = "Under Contruction"
+      document.getElementById("mainText").innerText = "Under Construction"
       await delay(500)
-      document.getElementById("mainText").innerText = "Under Contruction."
+      document.getElementById("mainText").innerText = "Under Construction."
       await delay(500)
-      document.getElementById("mainText").innerText = "Under Contruction.."
+      document.getElementById("mainText").innerText = "Under Construction.."
       await delay(500)
-      document.getElementById("mainText").innerText = "Under Contruction..."
+      document.getElementById("mainText").innerText = "Under Construction..."
       await delay(500)
       underContruction()
     }
@@ -34,7 +34,7 @@ export default function Game() {
         <div>
       <main className={`${styles.main}`}>
         <div id="mainText" className={styles.underContruction}>
-          Under Contruction...
+          Under Construction...
         </div>
       </main>
       </div>  
